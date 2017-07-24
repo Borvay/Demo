@@ -1,0 +1,100 @@
+html {
+    font-size: 625%;
+}
+body {
+    margin: 0 auto;
+    padding: 0 auto;
+}
+header, footer {
+    position: fixed;
+    padding: 0.07rem 0.1rem;
+    height: 0.32rem;
+    line-height: 0.32rem;
+    background: #ccc;
+    font-size: 0.14rem;
+}
+header {
+    left: 0;
+    right: 0;
+    top: 0;
+    color: #fff;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.14rem;
+    cursor: pointer;
+}
+header h2 {
+    padding: 0;
+    margin: 0 4em;
+    text-align: center;
+    font-size: 0.16rem;
+}
+footer {
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+main {
+    position: absolute;
+    top: 0.46rem;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #eff0f4;
+}
+main .content {
+    height: auto;
+    font-size: 0.12rem;
+}
+.button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.pull-left {
+    float: left;
+}
+.pull-right {
+    float: right;
+}
+header, .button {
+    background: #5fc0cd;
+    color: #fff;
+}
+a {
+    color: #5fc0cd;
+}
+.login-row {
+    margin: 0.1rem 0 0 0;
+    width: 100%;
+    background: #fff;
+}
+.login-row input {
+    box-sizing: border-box;
+    padding: 0 0 0 0.8rem;
+    width: 100%;
+    border: 0 none;
+    font-size: 0.14rem;
+    line-height: 0.5rem;
+    outline: none;
+}
+.login-row input[type=text] {
+    background: url("./phone.png") no-repeat;
+    background-size: 0.59rem 0.5rem;
+}
+.login-row input[type=password] {
+    background: url("./pwd.png") no-repeat;
+    background-size: 0.59rem 0.5rem;
+}
+.button-login {
+    margin-top: 0.1rem;
+    width: 100%;
+    line-height: 0.5rem;
+    font-size: 0.16rem;
+    letter-spacing: 1em;
+}
+.login-text {
+    padding: 0 1em;
+}
