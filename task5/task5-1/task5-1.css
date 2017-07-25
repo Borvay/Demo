@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    max-width: 720px; /*psd宽度为720px*/
+    margin: 0 auto;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding: 2% 0;
+    text-align: center;
+    color: white;
+    background: #5fc0cd;
+}
+
+.arrow {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+}
+
+.header h2 {
+    font-size: 3.6rem; /*个人主页36像素*/
+    font-weight: normal;
+}
+
+.backgronud {
+    width: 100%;
+    padding: 11% 0;
+    background-image: url("background.png");
+    background-size: cover; /*不能简写*/
+    overflow: hidden;
+}
+
+.backgronud .head-sculpture {
+    float: left;
+    width: 23.5%;
+    padding: 11.75% 0;
+    margin: 0 3%;
+    border-radius: 50%;
+    background: #efefef url("head-sculpture.png") bottom center /70% no-repeat
+}
+
+.backgronud .introduction {
+    float: left;
+    width: 70%;
+    color: white;
+}
+
+.backgronud .introduction p.name span {
+    font-size: 3.6rem; /*名字36像素*/
+}
+
+.backgronud .introduction p.name {
+    margin-left: 5%;
+    font-size: 2.8rem; /*年龄28像素*/
+}
+
+.backgronud .introduction p.location {
+    margin-left: 5%;
+    font-size: 2.4rem; /*位置24像素*/
+}
+
+.main {
+    border-bottom: 1px solid white;
+}
+
+.main .subnav {
+    padding: 0.01% 0;
+    border-bottom: 1px solid white;
+}
+
+.main .subnav .line {
+    margin: 0 4.17%;
+    padding-left: 5%;
+    border-left: 3px solid lightblue;
+}
+
+.main .subnav .line p {
+    font-size: 3.2rem;
+    margin: 4.6% 0;
+    color: #333;
+}
+
+.main .list {
+    margin-left: 5%;
+}
+
+.main .list li {
+    padding: 4.2%;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.main .list li img {
+    margin-right: 10px;
+}
+
+.main .list li span {
+    color: #333;
+}
+
+.main .list li span.property {
+    margin-right: 5%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e5e7;
+}
+
+.main .list li span.detail {
+    margin-right: 3%;
+    padding-right: 3%;
+    color: #999;
+    border-right: 1px solid #e1e5e7;
+}
+
+.main .list li span.red {
+    color: #e26163;
+}
+
+.special{
+    border-style: none;
+}
+.introduction1{
+    display: inline-block;
+    width: 70%;
+    color: #333;
+    vertical-align: middle;
+    font-size: 2.8rem;
+}
+
+.footer {
+    width: 100%;
+    overflow: hidden;
+    margin: 13.88% 5.55% 5.55%;
+}
+
+button {
+    float: left;
+    width: 43.05%;
+    padding: 2% 0;
+    margin: 0 2%;
+    font-size: 3.4rem;
+    font-family: "Hiragino Sans GB", serif;
+    border-radius: 10px;
+    -moz-border-radius: 2%; /* Firefox */
+    -webkit-box-sizing: border-box; /*Safari */
+    border: 1px solid #5fc0ce;
+
+}
+
+button.message {
+    color: #5ac0ce;
+    background: white;
+}
+
+button.contact {
+    color: white;
+    background: #5ac0ce;
+}
