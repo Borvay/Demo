@@ -7,7 +7,7 @@ body {
 }
 
 .header {
-    position: relative;
+    position: fixed;
     overflow: hidden;
     width: 100%;
     padding: 2% 0;
@@ -119,10 +119,11 @@ body {
     color: #e26163;
 }
 
-.special{
+.special {
     border-style: none;
 }
-.introduction1{
+
+.introduction1 {
     display: inline-block;
     width: 70%;
     color: #333;
