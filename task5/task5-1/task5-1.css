@@ -16,7 +16,7 @@ body {
     background: #5fc0cd;
 }
 
-.arrow {
+.header-back {
     position: absolute;
     top: 23%;
     left: 5%;
@@ -35,7 +35,7 @@ body {
     overflow: hidden;
 }
 
-.backgronud .head-sculpture {
+.backgronud .avatar {
     float: left;
     width: 23.5%;
     padding: 11.75% 0;
@@ -65,18 +65,18 @@ body {
 }
 
 .main {
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e1e5e7;
 }
 
 .main .subnav {
     padding: 0.01% 0;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #e1e5e7;
 }
 
 .main .subnav .line {
     margin: 0 4.17%;
     padding-left: 5%;
-    border-left: 3px solid lightblue;
+    border-left: 3px solid #5FC0CD;
 }
 
 .main .subnav .line p {
