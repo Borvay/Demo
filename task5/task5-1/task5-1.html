@@ -1,57 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="./reset.css">
-    <link rel="stylesheet" type="text/css" href="./task5-1.css">
-    <title>护工页面</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="task5-1.css">
+    <link rel="stylesheet" href="./base.css">
+    <title>护工页</title>
 </head>
-<body style="margin: 0 auto;">
-<div class="body">
-    <div class="header">
-        <a href="../task5-2/task5-2.html">
-            <img class="header-back" src="./arrow.png">
-        </a>
+<body>
+<div class="page">
+    <div class=" header">
+        <span class="head-back demoSpan1"></span>
         <h2>个人主页</h2>
+        <span class="null"></span>
     </div>
-    <div class="backgronud">
-        <div class="avatar"></div>
-        <div class="introduction">
-            <p class="name"><span>高素雅</span> 51岁</p>
-            <p class="location"><img src="./location.png"> 北京.通州.果园</p>
+    <div class="content">
+        <div class=" summary">
+            <div class="fl">
+                <img class="person" src="head-sculpture.png">
+                <img class="ads" src="arrow.png">
+            </div>
+            <div class="head-info fl">
+                <p class="name">高素雅&nbsp<span>51岁</span></p>
+                <p class="address">北京.通州.果园</p>
+            </div>
         </div>
-    </div>
-    <div class="main">
-        <div class="subnav">
-            <div class="line"><p>专业技能</p></div>
+        <div class=" ability">
+            <span class="blue-line"></span>
+            <span>专业技能</span>
         </div>
-        <ul class="list">
-            <li>
-                <span class="property"><img src="./star.png">住家</span>
-                <span><img src="./star.png">不含餐</span>
-            </li>
-            <li>
-                <span class="detail">从业年限</span>
+        <div class=" benefits row">
+            <div class="ab-span1"><b>住家</b></div>
+            <span class="gray-line"></span>
+            <div class="ab-span2"><b>不含餐</b></div>
+        </div>
+        <div class=" details row">
+            <div class="left">
+                <span>从业年限</span>
+            </div>
+            <span class="gray-line"></span>
+            <div class="right">
                 <span>0~3年</span>
-            </li>
-            <li>
-                <span class="detail">工作时间</span>
+            </div>
+        </div>
+        <div class=" details row">
+            <div class="left">
+                <span>工作时间</span>
+            </div>
+            <span class="gray-line"></span>
+            <div class="right">
                 <span>全天</span>
-            </li>
-            <li>
-                <span class="detail">服务价格</span>
+            </div>
+        </div>
+        <div class=" details row">
+            <div class="left">
+                <span>服务价格</span>
+            </div>
+            <span class="gray-line"></span>
+            <div class="right">
                 <span class="red">25元/小时</span>
-            </li>
-            <li class="special" style="padding: 2% 4.2%;">
-                <span class="detail">自我介绍</span>
-                <span class="introduction1"> 可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</span>
-            </li>
-        </ul>
+            </div>
+        </div>
+        <div class="details">
+            <div class="left">
+                <span>自我介绍</span>
+            </div>
+            <span class="gray-line"></span>
+            <div class="right">
+                <p>可以洗衣、做饭、照顾老人。在护工方面有5年的经验，经验丰富。</p>
+            </div>
+        </div>
+
     </div>
-    <div class="footer">
-        <button class="message" type="submit">留言</button>
-        <button class="contact" type="submit">电话联系</button>
-    </div>
+    <footer class="footer">
+        <div class="left">
+            <button class="foot-message" type="button">留言</button>
+        </div>
+        <div class="right">
+            <button class="foot-phone" type="button">电话联系</button>
+        </div>
+
+    </footer>
 </div>
 </body>
+</html>
