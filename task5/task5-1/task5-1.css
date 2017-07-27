@@ -91,9 +91,7 @@ body{
     background:url(background.png)  center no-repeat;
     background-size: cover;
 }
-.summary .person{
-    margin:0.4rem 0 0 0.15rem
-}
+
 .summary .ads{
     position: absolute;
     top:0.9rem;
@@ -128,7 +126,7 @@ body{
     padding: 0.17rem 0 0.17rem 0.15rem;
     border-bottom: 1px solid #e1e5e7;
     font-size: 0.16rem;
-    line-height: 0.16rem;
+    line-height: 0.21rem;
 }
 .content .details:last-child{
     padding: 0.17rem 0 0.17rem 0.23rem;
@@ -163,7 +161,7 @@ body{
 }
 .benefits>div{
     display: inline-block;
-    padding-left: 0.16rem;
+    padding-left: 0.36rem;
     background: url("star.png") left center no-repeat;
 }
 .benefits .ab-span1{
