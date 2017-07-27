@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+body, div, ul, li, h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Hiragino Sans GB", serif;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    max-width: 640px;
+    overflow: hidden;
+    margin: 0 auto;
+    font-size: 3.2rem;
+}
+
+.header {
+    color: #fff;
+    text-align: center;
+    background: #29bde0;
+}
+
+.main {
+    overflow: hidden;
+    text-align: center;
+}
