@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./task7-2.css">
+    <title>投票界面</title>
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="header-left"></div>
+        <h2>投票</h2>
+        <div class="header-right"></div>
+    </div>
+    <div class="main-header">
+        <p class="text-1">发言讨论结束，大家请投票</p>
+        <!--autio标签-->
+        <audio src="./cfzy.mp3" controls="controls" preload hidden id="music">您的浏览器不支持audio标签</audio>
+        <button id="a" onclick="a();">
+            <div class="circle">
+                <div class="tri">
+                    <div class="triangle-right"></div>
+                </div>
+            </div>
+        </button>
+        <script>
+            function a() {
+                var audio = document.getElementById('music');
+                if (audio.paused) {
+                    audio.play();//audio.play();// 播放
+                }
+                else {
+                    audio.pause();// 暂停
+                }
+            }
+        </script>
+    </div>
+    <div class="main-middle">
+        <p class="text-2">点击得票数最多人的头像</p>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>水民</p></div>
+                <div class="number"><p>1号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>水民</p></div>
+                <div class="number"><p>2号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>警察</p></div>
+                <div class="number"><p>3号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>法官</p></div>
+                <div class="number"><p>4号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>狙击手</p></div>
+                <div class="number"><p>5号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>医生</p></div>
+                <div class="number"><p>6号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>杀手</p></div>
+                <div class="number"><p>7号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>水民</p></div>
+                <div class="number"><p>8号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>水民</p></div>
+                <div class="number"><p>9号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>水民</p></div>
+                <div class="number"><p>10号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>水民</p></div>
+                <div class="number"><p>11号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+        <div class="box">
+            <div class="box-top">
+                <div class="identity"><p>水民</p></div>
+                <div class="number"><p>12号</p></div>
+            </div>
+            <ul class="box-bottom">
+                <li class="kill"></li>
+                <li class="search"></li>
+                <li class="aim"></li>
+                <li class="save"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <a href="../task7-3/task7-3.html">
+            <button class="vote" type="submit">投死</button>
+        </a>
+    </div>
+</div>
+</body>
+</html>
