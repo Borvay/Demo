@@ -1,0 +1,232 @@
+@charset "utf-8";
+
+body, div, dl, dt, dd, ul, li, h1, h2, h3, input, form, span, a, i, p, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 1920px){
+    html {
+        font-size: 625%;
+    }
+}
+
+@media screen and (max-width: 992px){
+    html {
+        font-size: 525%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    html {
+        font-size: 425%;
+    }
+}
+
+body {
+    background: #fafafa;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 0.14rem;
+}
+
+h2 {
+    padding: 0.2rem;
+    font-size: 0.18rem;
+    color: #333;
+    text-align: center;
+    font-weight: bold;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+}
+
+a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-top p {
+    line-height: 0.4rem;
+    color: #29b078;
+}
+
+.icon-header li {
+    float: right;
+    padding: 0.08rem 0.05rem;
+}
+
+@media screen and (max-width: 767px){
+    .icon-header li {
+        float: left;
+    }
+}
+
+.icon-header1-weixin {
+    width: 25px;
+    height: 24px;
+    background: url("sprite.png") -62px -113px;
+    margin-right: 0.06rem;
+}
+
+.icon-header1-qq {
+    width: 25px;
+    height: 24px;
+    background: url("sprite.png") -99px 0;
+    margin-right: 0.06rem;
+}
+
+.icon-header1-weibo {
+    width: 25px;
+    height: 24px;
+    background: url("sprite.png") -99px -26px;
+    margin-right: 0.06rem;
+}
+
+.header-nav-wrap {
+    background: #29b078;
+}
+
+.middle-logo {
+    float: left;
+    height: 0.5rem;
+    padding: 0.15rem;
+    margin-top: 0.05rem;
+    font-size: 0.18rem;
+    line-height: 0.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .middle-logo {
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 768px){
+    nav a img {
+        float: left;
+        width: 225px;
+        height: 44px;
+    }
+}
+
+nav .green-border-bottom {
+    border-bottom: 4px #29b078 solid;
+}
+
+nav .active {
+    border-bottom: 4px #fff solid;
+}
+
+.nav li {
+    padding: 0.2rem;
+    font-size: 0.16rem;
+    cursor: pointer;
+}
+
+.nav li:hover {
+    border-bottom: 4px #fefefe solid;
+}
+
+.nav li a:hover {
+    background: #29b078;
+}
+
+footer {
+    overflow: hidden;
+    margin-top: 0.5rem;
+    background: #26a26f;
+    color: #fff;
+}
+
+.footer-top {
+    width: 100%;
+    background: #fff;
+    color: #999;
+}
+
+.link ul li {
+    float: left;
+    width: 0.9rem;
+    margin: 0.1rem;
+    list-style-type: disc;
+    font-size: 0.14rem;
+    color: #999;
+    line-height: 0.44rem;
+}
+
+.link a {
+    color: #999;
+}
+
+.footer-middle-left p {
+    font-size: 0.16rem;
+    padding-top: 0.36rem;
+}
+
+.footer-middle-left ul {
+    float: left;
+    padding-top: 0.6rem;
+}
+
+.footer-middle-left ul li {
+    display: inline-block;
+}
+
+.footer-middle-middle p {
+    font-size: 0.16rem;
+    padding-top: 0.36rem;
+    padding-bottom: 0.2rem;
+}
+
+.footer-middle-middle ul {
+    overflow: hidden;
+}
+
+.footer-middle-middle ul li {
+    float: left;
+    margin: 0.1rem 0;
+    padding-right: 0.34rem;
+}
+
+.footer-middle-right p {
+    font-size: 0.16rem;
+    padding-top: 0.36rem;
+    padding-bottom: 0.06rem;
+}
+
+.footer-bottom {
+    width: 100%;
+    margin-top: 0.2rem;
+    height: 0.3rem;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #fff;
+    line-height: 0.3rem;
+    border-top: 1px #32c086 solid;
+    background: #26a26f;
+}
+
+
+
+
+
+
+
+
+
