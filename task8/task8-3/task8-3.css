@@ -1,0 +1,283 @@
+@charset "UTF-8";
+
+.catalog {
+    margin: 0 auto;
+    padding: 0.3rem 0;
+}
+
+.catalog li {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.catalog li a {
+    font-size: 0.16rem;
+    color: #333;
+}
+
+.catalog li span {
+    color: #29b078;
+}
+
+.direction {
+    padding: 0.2rem 0;
+    border-top: 1px solid #d0d6d9;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.direction h3 {
+    font-size: 14px;
+    color: #999;
+}
+
+.direction button {
+    background: #fafafa;
+    color: #333;
+    border: none;
+    border-radius: 0;
+    padding: 1px 3px;
+    margin-left: 0.25rem;
+}
+
+.direction .act {
+    background: #29b078;
+    color: #fff;
+}
+
+.direction button:hover {
+    background: #29b078;
+    color: #fff;
+}
+
+.detail1 {
+    overflow: hidden;
+}
+
+.detail1 li h3 {
+    padding: 0.3rem 0;
+    margin-bottom: 0.16rem;
+    font-size: 0.16rem;
+    font-weight: bold;
+    border-bottom: 1px solid #d0d6d9;
+
+}
+
+.box-wrap {
+    margin: 0.3rem 0 0.01rem;
+    padding: 0 0.05rem;
+}
+
+.box {
+    position: relative;
+    font-size: 0.12rem;
+    color: #999;
+    border: 1px solid #eeeded;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #f6f6f6;
+    background: #fff;
+}
+
+.box .line1 {
+    padding: 0.2rem 0.01rem 0.16rem;
+    border-bottom: 1px solid #edf1f2;
+    overflow: hidden;
+}
+
+.box .line1 img {
+    float: left;
+    margin: 0.1rem;
+}
+
+.box .line1 h3 {
+    display: inline-block;
+    font-size: 0.16rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 0.1rem;
+    margin-bottom: 0.07rem;
+    padding: 0.05rem 0;
+    border-bottom: none;
+}
+
+.box .line1 p {
+    font-size: 0.14rem;
+    line-height: 0.2rem;
+    color: #333;
+    word-break: break-all;
+}
+
+.box .line2 {
+    overflow: hidden;
+    font-size: 0;
+}
+
+.box .line2 span {
+    font-size: 0.14rem;
+}
+
+.box .line2 ul li {
+    float: left;
+    width: 50%;
+    padding: 0.14rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.box .line2 .threshold {
+    border-right: 1px solid #edf1f2;
+}
+
+.box .line2 img {
+    font-size: 0;
+    margin-left: 0.1rem;
+    margin-top: -0.12rem;
+}
+
+@media screen and (max-width: 768px) {
+    .box .line2 .threshold {
+        width: 40%;
+    }
+    .box .line2 .complexity {
+        width: 60%;
+    }
+}
+
+.box .line3 {
+    overflow: hidden;
+}
+
+.box .line3 ul li {
+    float: left;
+    width: 50%;
+    padding: 0.14rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.box .line3 .cycle {
+    border-right: 1px solid #edf1f2;
+}
+
+.box .line3 .cycle span {
+    margin-left: 0.12rem;
+    color: #333;
+}
+
+.box .line3 .cycle span strong {
+    font-weight: normal;
+    color: #f01400;
+}
+
+.box .line3 .rareness span {
+    margin-left: 0.12rem;
+    color: #333;
+}
+
+.box .line3 .rareness span strong {
+    font-weight: normal;
+    color: #f01400;
+}
+
+@media screen and (max-width: 768px) {
+    .box .line3 .cycle {
+        width: 40%;
+    }
+    .box .line2 .rareness {
+        width: 60%;
+    }
+}
+
+.box .line4 {
+    overflow: hidden;
+    border-bottom: 1px solid #edf1f2;
+}
+
+.box .line4 .treatment {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.08rem;
+    border-right: 1px solid #edf1f2;
+}
+
+.box .line4 .particulars {
+    display: inline-block;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.box .line4 .particulars li {
+    border-bottom: 1px solid #edf1f2;
+}
+
+.box .line4 .particulars li p {
+    padding: 0.08rem;
+    margin: 0;
+    color: #333;
+}
+
+.box .line4 .particulars .particulars1 {
+    border: none;
+}
+
+.box .line4 .particulars li i {
+    font-style: normal;
+    float: right;
+}
+
+.box .line5 {
+    padding: 0.12rem;
+    font-size: 0.14rem;
+    font-weight: bold;
+    border-bottom: 1px solid #edf1f2;
+    text-align: left;
+}
+
+.box .line5 p {
+    color: #333;
+}
+
+.box .line5 p i {
+    font-style: normal;
+    color: #f01400;
+}
+
+.box .line6 {
+    padding: 0.09rem;
+}
+
+.behind {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: 0.16rem;
+    color: #fff;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    background: rgba( 0, 0, 0, 0.761 );
+}
+
+.box .behind ul li {
+    line-height: 0.23rem;
+}
+
+.box .behind ul li h3 {
+    padding-top: 0.8rem;
+    text-align: center;
+    border: none;
+}
+
+.box .behind ul li p {
+    padding: 0.32rem;
+    text-indent: 0.25rem;
+    text-align: left;
+}
+
+.box:hover .behind {
+    transform: rotateY(0deg);
+    transition: 1s;
+}
+
