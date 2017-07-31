@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./reset.css">
+    <link rel="stylesheet" type="text/css" href="./task10.css">
+    <title>51家装</title>
+</head>
+<body>
+<div class="header">
+    <div class="header-top container">
+        <div class="row">
+            <p class="col-lg-10 col-md-6 col-sm-6 col-xs-6 hidden-xs">客服热线：010-594-78634</p>
+            <ul>
+                <li class="login">登陆</li>
+                <li class="register">注册</li>
+            </ul>
+        </div>
+    </div>
+    <div class="catalogue">
+        <div class="header-bottom container">
+            <div class="row">
+                <ul class="nav nav-pills col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                    <li role="presentation">品质保障</li>
+                    <li role="presentation">标准箱</li>
+                    <li role="presentation">在线定制</li>
+                    <li role="presentation" class="current">首页</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main container">
+    <ul class="row">
+        <li class="main-step">
+            <ul>
+                <li class="main-step-current">
+                    <p>1</p>
+                    <h3>1.定制纸箱</h3>
+                </li>
+                <li>
+                    <p>2</p>
+                    <h3>2.选择数量</h3>
+                </li>
+                <li>
+                    <p>3</p>
+                    <h3>3.上传附件</h3>
+                </li>
+                <li>
+                    <p>4</p>
+                    <h3>4.确认下单</h3>
+                </li>
+            </ul>
+        </li>
+        <li class="guidance">
+            <p>请您按照以下步骤来定制您的纸箱</p>
+        </li>
+        <li class="type">
+            <i></i>
+            <span>选择箱型</span>
+        </li>
+        <li class="main-type-select row">
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6" for="suit cases">
+                <input type="radio" name="type" id="suit cases" class="hidden">
+                <span></span>对口箱
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6" for="plane box">
+                <input type="radio" name="type" id="plane box" class="hidden">
+                <span></span>飞机盒
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6" for="lid and tray">
+                <input type="radio" name="type" id="lid and tray" class="hidden">
+                <span></span>天地盖
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6 select-1">
+                <select>
+                    <option value="">查看详情</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+            </label>
+        </li>
+        <li class="size">
+            <i></i>
+            <span>确认尺寸</span>
+        </li>
+        <li class="main-size-input row">
+            <label class="col-lg-2 col-md-3 col-sm-2 col-xs-6" for="outside">
+                <input type="radio" name="size" id="outside" class="hidden">
+                <span></span>外径
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                长：
+                <input type="text" class="box">
+                <span>mm</span>
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                宽：
+                <input type="text" class="box">
+                <span>mm</span>
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                高：
+                <input type="text" class="box">
+                <span>mm</span>
+            </label>
+        </li>
+        <li class="main-size-input-2 row">
+            <label class="col-lg-2 col-md-3 col-sm-2 col-xs-6" for="inside">
+                <input type="radio" name="size" id="inside" class="hidden">
+                <span></span>内径
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                长：
+                <input type="text" class="box">
+                <span>mm</span>
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                宽：
+                <input type="text" class="box">
+                <span>mm</span>
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                高：
+                <input type="text" class="box">
+                <span>mm</span>
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-2 col-xs-6 select-2">
+                <select>
+                    <option value="">查看详情</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+            </label>
+        </li>
+        <li class="texture">
+            <i></i>
+            <span>选择材质</span>
+        </li>
+        <li class="main-texture-select row">
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                <input type="radio" name="texture" class="hidden">
+                <span></span>三层A瓦优质
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                <input type="radio" name="texture" class="hidden">
+                <span></span>三层A瓦优质
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                <input type="radio" name="texture" class="hidden">
+                <span></span>三层A瓦优质
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                <input type="radio" name="texture" class="hidden">
+                <span></span>三层A瓦优质
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6">
+                <input type="radio" name="texture" class="hidden">
+                <span></span>三层A瓦优质
+            </label>
+            <label class="col-lg-2 col-md-3 col-sm-3 col-xs-6 select-3">
+                <select>
+                    <option value="">查看详情</option>
+                    <option value="">1</option>
+                    <option value="">2</option>
+                </select>
+            </label>
+        </li>
+        <li class="container btn-area">
+            <button type="submit">下一步</button>
+        </li>
+    </ul>
+</div>
+<div class="footer">
+    <div class="container footer-top">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-top-left">
+                51包装网— 纸箱包装首选服务平台
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-top-middle">
+                <ul>
+                    <li><a href="">关于我们</a></li>
+                    <li><a href="">配送流程</a></li>
+                    <li><a href="">联系我们</a></li>
+                </ul>
+                <ul>
+                    <li><a href="">下单指南</a></li>
+                    <li><a href="">媒体介绍</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 footer-top-right">
+                <ul>
+                    <li>TEL：400-0000-000</li>
+                    <li>企业QQ：123456789</li>
+                    <li>微信号：XXXXXXX</li>
+                </ul>
+                <img src="./icon-footer-QRCodes.png">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        北京五一包装科技有限公司Copyright ©2015&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;51baozhuang.com015&nbsp;&nbsp;&nbsp;All rights reserved.&nbsp;&nbsp;&nbsp;京icp备99999999-1
+    </div>
+</div>
+</body>
+</html>
