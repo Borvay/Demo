@@ -1,0 +1,131 @@
+@charset "UTF-8";
+.reset {
+    margin: 0;
+    padding: 0;
+}
+body,
+div,
+span,
+input,
+form,
+ul {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    color: #fff;
+    font-size: 625%;
+}
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 450%;
+    }
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+.ov-hd {
+    overflow: hidden;
+}
+.fl-l {
+    float: left;
+}
+.wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+body {
+    background: #eff0f4;
+    font-family: "Microsoft YaHei", serif;
+    font-size: 0.32rem;
+    min-width: 320px;
+}
+input:focus {
+    outline: none;
+}
+.wrap .title {
+    position: fixed;
+    top: 0;
+    overflow: hidden;
+    background: #5fc0cd;
+    width: 100%;
+    min-width: 320px;
+    z-index: 999;
+}
+.wrap .title .title-left {
+    float: left;
+    width: 30%;
+    padding: 0.3rem 0 0.3rem 0.3rem;
+}
+.wrap .title .title-left span {
+    float: left;
+    line-height: 0.32rem;
+}
+.wrap .title .title-middle {
+    float: left;
+    width: 40%;
+    text-align: center;
+    margin: 0.3rem auto 0.26rem;
+}
+.wrap .title .title-middle span {
+    font-size: 0.36rem;
+    line-height: 0.36rem;
+}
+.wrap .title .title-right {
+    float: right;
+    width: 30%;
+    padding: 0.3rem 0.3rem 0.3rem 0;
+}
+.wrap .title .title-right span {
+    float: right;
+    line-height: 0.32rem;
+}
+form {
+    margin-top: 1.14rem;
+}
+form ul {
+    margin-bottom: 0.7rem;
+}
+form ul li {
+    padding: 2% 0;
+    background: #fff;
+}
+form ul li label {
+    display: inline-block;
+    width: 5%;
+    padding: 0 2%;
+    text-align: center;
+    vertical-align: middle;
+}
+form ul li input {
+    width: 85%;
+    font-size: 0.32rem;
+    text-indent: 0.2rem;
+    vertical-align: middle;
+    border: none;
+    border-left: 2px solid #eaedee;
+}
+form button {
+    width: 100%;
+    border: none;
+    font-size: 0.36rem;
+    letter-spacing: 0.18rem;
+    padding: 0.26rem;
+    color: #fff;
+    background: #5fc0cd;
+}
+.second {
+    margin-top: 0.14rem;
+}
+.foot {
+    float: right;
+    color: #5fc0cd;
+    font-size: 0.32rem;
+    margin-right: 4%;
+    margin-bottom: 56.85%;
+}
