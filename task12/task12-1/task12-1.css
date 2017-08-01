@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+body {
+    width: 100%;
+    max-width: 720px;
+}
+
+.header {
+    /*positioning*/
+    position: relative;
+    /*box-model*/
+    width: 100%;
+    padding: 2% 0;
+    /*typographic*/
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    /*visual*/
+    background: #5fc0cd;
+}
+
+.header-back {
+    position: absolute;
+    top: 23%;
+    left: 5%;
+    max-width: 22px;
+    width: 3.06%;
+}
+
+.header h2 {
+    font-size: .36rem; /*个人主页36像素*/
+    font-weight: normal;
+}
+
+.background {
+    width: 100%;
+    padding: 11% 0;
+    background-image: url("background.png");
+    background-size: cover; /*不能简写*/
+    overflow: hidden;
+}
+
+.background .avatar {
+    float: left;
+    width: 23.5%;
+    padding: 11.75% 0;
+    margin: 0 3%;
+    background: #efefef url("icon-avatar.png") bottom center /70% no-repeat;
+    border-radius: 50%;
+}
+
+.background .introduction {
+    float: left;
+    width: 70%;
+    color: white;
+}
+
+.background .introduction p.name span {
+    font-size: .36rem; /*名字36像素*/
+}
+
+.background .introduction p.name {
+    margin-left: 5%;
+    font-size: .28rem; /*年龄28像素*/
+}
+
+.background .introduction p.location {
+    margin-left: 5%;
+    font-size: .24rem; /*位置24像素*/
+}
+
+.main {
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.main .subnav {
+    padding: 0.01% 0;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.main .subnav .line {
+    margin: 0 4.17%;
+    padding-left: 5%;
+    border-left: 3px solid #5FC0CD;
+}
+
+.main .subnav .line p {
+    margin: 4.6% 0;
+    font-size: .32rem;
+    color: #333;
+}
+
+.main .list {
+    margin-left: 5%;
+}
+
+.main .list li {
+    padding: 4.2%;
+    border-bottom: 1px solid #e1e5e7;
+}
+
+.main .list li img {
+    margin-right: 10px;
+}
+
+.main .list li span {
+    color: #333;
+}
+
+.main .list li span.property {
+    margin-right: 5%;
+    padding-right: 5%;
+    border-right: 1px solid #e1e5e7;
+}
+
+.main .list li span.detail {
+    margin-right: 3%;
+    padding-right: 3%;
+    color: #999;
+    border-right: 1px solid #e1e5e7;
+}
+
+.main .list li span.red {
+    color: #e26163;
+}
+
+.special{
+    border-style: none;
+}
+
+.introduction1{
+    display: inline-block;
+    width: 70%;
+    color: #333;
+    vertical-align: middle;
+    font-size: .28rem;
+}
+
+.footer {
+    width: 100%;
+    overflow: hidden;
+}
+
+button {
+    float: left;
+    box-sizing: border-box;
+    width: 43.05%;
+    padding: 2% 0;
+    margin: 14% 3.4% 5.6%;
+    font-size: .34rem;
+    font-family: "Hiragino Sans GB", serif;
+    border: 1px solid #5fc0ce;
+    border-radius: 10px;
+    -moz-border-radius: 2%; /* Firefox */
+    -webkit-box-sizing: border-box; /*Safari */
+
+}
+
+button.message {
+    color: #5ac0ce;
+    background-color: #fff;
+}
+
+button.contact {
+    color: #fff;
+    background-color: #5ac0ce;
+}

@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+div, ul, li, h1, h2, h3, h4, h5, h6, input, form, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 625%;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+body {
+    margin: 0 auto;
+    font-size: .32rem;
+    font-family: "Heiti TC", serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
