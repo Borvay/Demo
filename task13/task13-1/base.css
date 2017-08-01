@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    width: 100%;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: .32rem;
+}
+
+.header {
+    color: #fff;
+    text-align: center;
+    background: #29bde0;
+}
+
+.main {
+    overflow: hidden;
+    text-align: center;
+}
+
+.bdc9 {
+    border: 1px solid #c9c9c9;
+}
+
+.g9a {
+    color: #9a9a9a;
+}

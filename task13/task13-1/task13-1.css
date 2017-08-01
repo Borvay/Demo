@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.header {
+    position: fixed;
+    top: 0;
+    max-width: 640px;
+    z-index: 999;
+}
+
+.header-left {
+    max-width: 34px;
+    width: 5.3125%;
+    margin-top: 6.25%;
+    margin-left: 3.44%;
+    margin-bottom: 3.28%;
+}
+
+.main {
+    padding: 4% 5.625% 9.6875%;
+}
+
+.main-header {
+    margin-top: .88rem;
+    margin-bottom: 4.0625%;
+    font-size: .3484rem;
+    line-height: 1.16rem;
+}
+
+.forward {
+    top: 35%;
+    right: 2.622%;
+    max-width: 24px;
+    width: 4.22%;
+}
+
+.name {
+    font-size: .3774rem;
+    line-height: .9rem;
+    color: #fbb435;
+    border-bottom: 1px #fbb435 solid ;
+}
+
+.version {
+    width: 81.34%;
+    margin: 5% auto;
+    font-size: .3208rem;
+    line-height: 1.086rem;
+    color: #fff;
+    background: #69d1e9;
+    border: 0;
+}
+
+.sum {
+    font-size: .26rem;
+    color: #787878;
+}
+
+.pager {
+    width: .9rem;
+    height: .33rem;
+    margin: 2% 41.65%;
+}
+
+.circle {
+    width: .15rem;
+    height: .15rem;
+    margin: 4%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+}
+
+.circle-active,
+.circle:hover {
+    background: #69d1e9;
+}
+
+.triangle-right {
+    top: 50%;
+    right: 1.6%;
+    width: 0;
+    height: 0;
+    margin-top: -.2rem;
+    border-top: .233rem transparent solid;
+    border-left: .233rem #fbb435 solid;
+    border-bottom: .233rem transparent solid;
+}
+
+
+
+
+
+
+
+
+
+
