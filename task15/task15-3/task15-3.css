@@ -1,0 +1,293 @@
+@charset "UTF-8";
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+.rel {
+    position: relative;
+}
+.abs {
+    position: absolute;
+}
+.dn {
+    display: none;
+}
+.db {
+    display: block;
+}
+.dib {
+    display: inline-block;
+}
+.ovh {
+    overflow: hidden;
+}
+.pct100 {
+    width: 100%;
+}
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.g3 {
+    color: #333;
+}
+.wh {
+    color: #fff;
+}
+.g9 {
+    color: #999;
+}
+.g29b {
+    color: #29b078;
+}
+.bg29b {
+    background-color: #29b078;
+}
+.bgwh {
+    background-color: #fff;
+}
+.bgfa {
+    background-color: #fafafa;
+}
+.tc {
+    text-align: center;
+}
+.tl {
+    text-align: left;
+}
+.b {
+    font-weight: bold;
+}
+.vm {
+    vertical-align: middle;
+}
+.tdn {
+    text-decoration: none;
+}
+.catalog {
+    margin-left: auto;
+    margin-right: auto;
+    padding: .3rem 0;
+}
+.catalog li {
+    display: inline-block;
+    font-weight: bold;
+}
+.catalog li a {
+    font-size: .16rem;
+    color: #333;
+}
+.catalog li span {
+    color: #29b078;
+}
+.direction {
+    padding: .2rem 0;
+    border-top: 1px solid #d0d6d9;
+    border-bottom: 1px solid #edf1f2;
+}
+.direction h3 {
+    font-size: .14rem;
+    color: #999;
+}
+.direction h3 .btn {
+    background: #fafafa;
+    margin-left: .25rem;
+    padding: 1px 3px;
+    border: none;
+    color: #333;
+}
+.direction h3 .btn:hover {
+    background-color: #29b078;
+    color: #fff;
+}
+.direction h3 .act {
+    background-color: #29b078;
+    color: #fff;
+}
+.detail1 {
+    overflow: hidden;
+}
+.detail1 li h3 {
+    padding: .3rem 0;
+    margin-bottom: .16rem;
+    font-size: .16rem;
+    font-weight: bold;
+    border-bottom: 1px solid #d0d6d9;
+}
+.box-wrap {
+    margin: .3rem 0 .01rem;
+    padding: 0 .05rem;
+}
+.box-wrap .box {
+    position: relative;
+    font-size: .12rem;
+    color: #999;
+    background-color: #fff;
+    border: 1px solid #eeeded;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px #f6f6f6;
+}
+.box-wrap .box .line1 {
+    overflow: hidden;
+    padding: .2rem .01rem .16rem;
+    border-bottom: 1px solid #edf1f2;
+}
+.box-wrap .box .line1 img {
+    float: left;
+    margin: .1rem;
+}
+.box-wrap .box .line1 h3 {
+    display: inline-block;
+    margin-top: .1rem;
+    margin-bottom: .07rem;
+    padding: .05rem 0;
+    font-size: .16rem;
+    font-weight: bold;
+    color: #333;
+    border-bottom: none;
+}
+.box-wrap .box .line1 p {
+    font-size: .14rem;
+    line-height: .2rem;
+    word-break: break-all;
+    color: #333;
+}
+.box-wrap .box .line2 {
+    overflow: hidden;
+    font-size: 0;
+}
+.box-wrap .box .line2 span {
+    font-size: .14rem;
+}
+.box-wrap .box .line2 img {
+    font-size: 0;
+    margin-left: .1rem;
+    margin-top: -0.12rem;
+}
+.box-wrap .box .line2 li {
+    float: left;
+    width: 50%;
+    padding: .14rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #edf1f2;
+}
+.box-wrap .box .line2 .threshold {
+    border-right: 1px solid #edf1f2;
+}
+.box-wrap .box .line3 {
+    overflow: hidden;
+}
+.box-wrap .box .line3 li {
+    float: left;
+    width: 50%;
+    padding: .14rem;
+    box-sizing: border-box;
+    border-bottom: 1px solid #edf1f2;
+}
+.box-wrap .box .line3 li span {
+    margin-left: .12rem;
+    color: #333;
+}
+.box-wrap .box .line3 li span strong {
+    font-weight: normal;
+    color: #f01400;
+}
+.box-wrap .box .line3 .cycle {
+    border-right: 1px solid #edf1f2;
+}
+.box-wrap .box .line4 {
+    overflow: hidden;
+    border-bottom: 1px solid #edf1f2;
+}
+.box-wrap .box .line4 .treatment {
+    float: left;
+    width: 40%;
+    box-sizing: border-box;
+    text-align: center;
+    line-height: 1.08rem;
+    border-right: 1px solid #edf1f2;
+}
+.box-wrap .box .line4 .particulars {
+    display: inline-block;
+    width: 60%;
+    box-sizing: border-box;
+}
+.box-wrap .box .line4 .particulars li {
+    border-bottom: 1px solid #edf1f2;
+}
+.box-wrap .box .line4 .particulars li p {
+    padding: .08rem;
+    margin: 0;
+    color: #333;
+}
+.box-wrap .box .line4 .particulars li i {
+    float: right;
+    font-style: normal;
+}
+.box-wrap .box .line4 .particulars .particulars1 {
+    border: none;
+}
+.box-wrap .box .line5 {
+    padding: .12rem;
+    font-size: .14rem;
+    font-weight: bold;
+    text-align: left;
+    border-bottom: 1px solid #edf1f2;
+}
+.box-wrap .box .line5 p {
+    color: #333;
+}
+.box-wrap .box .line5 p i {
+    font-style: normal;
+    color: #f01400;
+}
+.box-wrap .box .line6 {
+    padding: .09rem;
+}
+.box-wrap .box .behind {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    font-size: .16rem;
+    color: #fff;
+    transform: rotateY(-180deg);
+    backface-visibility: hidden;
+    background: rgba(0, 0, 0, 0.761);
+}
+.box-wrap .box .behind li {
+    line-height: .23rem;
+}
+.box-wrap .box .behind li h3 {
+    padding-top: .8rem;
+    text-align: center;
+    border: none;
+}
+.box-wrap .box .behind li p {
+    padding: .32rem;
+    text-indent: .25rem;
+    text-align: left;
+}
+.box:hover .behind {
+    transform: rotateY(0deg);
+    transition: 1s;
+}
+@media screen and (max-width: 768px) {
+    .box .line2 .threshold {
+        width: 40%;
+    }
+    .box .line2 .complexity {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .box .line3 .cycle {
+        width: 40%;
+    }
+    .box .line2 .rareness {
+        width: 60%;
+    }
+}

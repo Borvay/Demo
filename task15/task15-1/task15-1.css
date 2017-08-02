@@ -1,0 +1,246 @@
+@charset "UTF-8";
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+.dn {
+    display: none;
+}
+.db {
+    display: block;
+}
+.dib {
+    display: inline-block;
+}
+.ovh {
+    overflow: hidden;
+}
+.pct100 {
+    width: 100%;
+}
+.auto {
+    margin-left: auto;
+    margin-right: auto;
+}
+.g3 {
+    color: #333;
+}
+.wh {
+    color: #fff;
+}
+.g9 {
+    color: #999;
+}
+.g29b {
+    color: #29b078;
+}
+.bg29b {
+    background-color: #29b078;
+}
+.bgwh {
+    background-color: #fff;
+}
+.tc {
+    text-align: center;
+}
+.tl {
+    text-align: left;
+}
+.b {
+    font-weight: bold;
+}
+.vm {
+    vertical-align: middle;
+}
+.tdn {
+    text-decoration: none;
+}
+.main-middle-1 {
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fafafa;
+}
+.main-middle-1 .row {
+    overflow: hidden;
+    width: 100%;
+    margin: 1.6rem .05rem 1.2rem;
+}
+.advantage {
+    vertical-align: top;
+    text-align: left;
+}
+@media screen and (max-width: 992px) {
+    .advantage {
+        text-align: center;
+    }
+}
+.efficient {
+    margin-left: auto;
+    margin-right: auto;
+    width: 43px;
+    height: 62px;
+    background: url("sprite.png") no-repeat 0 0;
+}
+.normalized {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60px;
+    height: 62px;
+    background: url("sprite.png") no-repeat 0 -64px;
+}
+.contacts {
+    margin-left: auto;
+    margin-right: auto;
+    width: 52px;
+    height: 62px;
+    background: url("sprite.png") no-repeat -45px 0;
+}
+.main-middle-1-right {
+    padding: .48rem 0 .2rem .5rem;
+    border-left: 3px dashed #dedede;
+}
+@media screen and (max-width: 992px) {
+    .main-middle-1-right {
+        display: none;
+    }
+}
+.main-middle-1 p {
+    font-size: .16rem;
+    line-height: .42rem;
+    color: #999;
+}
+.main-middle-1-right .top {
+    padding-bottom: .2rem;
+}
+.main-middle-1-right p {
+    margin-bottom: .2rem;
+    font-size: .18rem;
+    line-height: .3rem;
+    color: #999999;
+}
+.main-middle-1-right .user {
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    margin-right: .1rem;
+    background: url("sprite.png") no-repeat -126px -52px;
+}
+.main-middle-1-right span {
+    font-size: .18rem;
+    line-height: .3rem;
+    font-weight: normal;
+    color: #26a26f;
+}
+.main-middle-2 {
+    margin-left: auto;
+    margin-right: auto;
+}
+.list {
+    width: 100%;
+    padding: .22rem 0;
+}
+.list li {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 0 .96rem;
+}
+.main-middle-2 span {
+    margin-right: .16rem;
+}
+.list p {
+    display: inline-block;
+    width: 1.5rem;
+    font-size: .14rem;
+    text-align: left;
+    vertical-align: middle;
+    color: #999;
+}
+.arrow {
+    display: inline-block;
+    width: 28px;
+    height: 26px;
+    vertical-align: middle;
+    background: url("sprite.png") no-repeat -91px -112px;
+}
+.circle {
+    display: inline-block;
+    vertical-align: middle;
+    width: .7rem;
+    height: .7rem;
+    font-size: .18rem;
+    line-height: .7rem;
+    text-align: center;
+    color: #29b078;
+    background-color: #fff;
+    border-radius: .35rem;
+    box-shadow: 1px 1px 1px #e6e6e6;
+}
+.show li {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    padding: .2rem;
+}
+.show-1 {
+    overflow: hidden;
+    padding: .2rem;
+    border: 1px #eeeded solid;
+    background-color: #fff;
+}
+.avatar {
+    margin-bottom: .14rem;
+}
+.show p {
+    float: left;
+    padding: .09rem;
+    font-size: .16rem;
+    line-height: .26rem;
+    color: #999;
+}
+.more {
+    width: .8rem;
+    height: .2rem;
+    margin: 2% auto;
+    font-size: 0;
+    content: '';
+}
+.circle-2 {
+    display: inline-block;
+    margin-right: .05rem;
+    width: .13rem;
+    height: .13rem;
+    background-color: #fff;
+    border-radius: .065rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 1px 1px 1px #ccc;
+}
+.circle-2:hover {
+    background-color: #29b078;
+}
+.main-bottom {
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+.main-bottom .row {
+    background-color: #fff;
+    padding-bottom: .05rem;
+    margin-bottom: .4rem;
+}
+.img-bg {
+    margin: .05rem 0;
+}
+.img-bg:hover {
+    border-radius: 3px;
+    box-shadow: -1px 0 16px 2px #cccccc;
+    z-index: 999;
+}
+@media screen and (min-width: 1200px) {
+    .img-bg {
+        width: 20%;
+    }
+}
