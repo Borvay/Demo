@@ -1,159 +1,239 @@
-@charset "UTF-8";
-.l {
-    float: left;
-}
-.r {
-    float: right;
-}
-.dn {
-    display: none;
-}
-.db {
-    display: block;
-}
-.dib {
-    display: inline-block;
-}
-.ovh {
-    overflow: hidden;
-}
-.pct100 {
-    width: 100%;
-}
-.auto {
-    margin-left: auto;
-    margin-right: auto;
-}
-.g3 {
-    color: #333;
-}
-.wh {
-    color: #fff;
-}
-.g9 {
-    color: #999;
-}
-.g29b {
-    color: #29b078;
-}
-.bg29b {
-    background-color: #29b078;
-}
-.bgwh {
-    background-color: #fff;
-}
-.tc {
-    text-align: center;
-}
-.tl {
-    text-align: left;
-}
-.b {
-    font-weight: bold;
-}
-.vm {
-    vertical-align: middle;
-}
-.tdn {
-    text-decoration: none;
-}
-.catalog {
-    margin-left: auto;
-    margin-right: auto;
-    padding: .3rem 0;
-}
-.catalog li {
-    display: inline-block;
-}
-.catalog li a {
-    font-size: .16rem;
-    color: #333;
-}
-.catalog li span {
-    color: #29b078;
-}
-.main {
-    overflow: hidden;
-}
-.sidebar {
-    background-color: #fff;
-    border: 1px #ededed solid;
-    border-radius: .04rem;
-    box-shadow: 0 2px 5px #ddd;
-    padding-bottom: .2rem;
-}
-.sidebar li {
-    line-height: .5rem;
-    font-size: .14rem;
-}
-@media screen and (max-width: 768px) {
-    .sidebar .change {
-        display: inline-block;
-        width: 49%;
-    }
-}
-.sidebar h2 {
+*{
     margin: 0;
     padding: 0;
-    font-size: .16rem;
-    line-height: .6rem;
-    text-align: center;
-    color: #333;
-    border-bottom: 1px #e6e6e6 solid;
+    border-style: none;
 }
-.sidebar .circle {
+p{
+    padding: 0;
+    margin: 0;
+}
+html {
+
+    font-family: "Microsoft YaHei" ,serif;
+
+}
+
+body{
+    min-width: 320px;
+
+}
+
+/* banner start*/
+.banner-bg{
+    width: 100%;
+    background-color:rgb(241,167,80);
+}
+.banner-img{
+    width: 84%;
+}
+/* banner end*/
+.bg-color{
+    padding-bottom: 100px;
+    background-color: rgb(250,250,250);
+}
+
+.bg-color-2{
+    background-color: inherit !important;
+}
+.breadcrumb{
+    background-color: inherit;
+    margin-bottom: 0;
+    margin-top:20px;
+}
+
+.breadcrumb li{
+    font-size: 16px;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0;
+    color: rgb(51,51,51);
+    content: ">\00a0";
+}
+
+.breadcrumb>.active {
+    color: rgb(41,176,120);
+}
+
+/*黑色*/
+.color1{
+    color: rgb(51,51,51);
+}
+/*绿色*/
+.color2{
+    color: rgb(41,176,120);
+}
+
+
+.nav>li>a {
+    color: rgb(41,176,120);
+}
+
+.dropdown-menu>li>a {
+    color: rgb(41,176,120);
+}
+/*patr1*/
+
+.patr1{
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 0 3px rgb(226,226,226);
+}
+
+.patr1 li{
+    margin: 0 auto;
+    padding-bottom: 36px;
+    width: 86px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.patr1 .li1{
+    width: 100%;
+    padding: 0;
+    margin-bottom: 36px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 60px;
+    border-bottom: solid 1px rgb(230,230,230);
+    color: rgb(51,51,51);
+}
+
+.patr1 .li2{
+    color: rgb(41,176,120);
+}
+
+.patr1 .li3{
+
+    color: rgb(255,109,27);
+}
+
+.round1{
+    vertical-align: middle;
     display: inline-block;
+    margin: 1px 3px;
     width: 10px;
     height: 10px;
-    margin-right: .05rem;
-    background: url("sprite.png") no-repeat -126px 0;
+    border-radius: 50%;
+    border:solid 1px rgb(255,109,27);
+    background-color: transparent;
 }
-.sidebar li .active {
-    background: url("sprite.png") no-repeat -126px -26px;
+
+.round2{
+    vertical-align: middle;
+    display: inline-block;
+    margin: 1px 3px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border:solid 1px rgb(255,109,27);
+    background-color: rgb(249,163,114);
 }
-.sidebar li:hover .circle {
-    background: url("sprite.png") no-repeat -126px -26px;
+
+
+/*patr2*/
+
+.article1{
+    padding: 30px 8%;
+    background-color: white;
+    box-shadow: 0 0 3px rgb(226,226,226);
 }
-.sidebar a {
-    padding-left: 35%;
-    font-size: .14rem;
+
+.p3{
+    width: 100%;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(153,153,153);
+    border: none;
+}
+
+.p3 img{
+    float: left;
+    padding-right: 5px;
+}
+
+
+
+.p4{
+    margin-bottom: 30px;
+    text-indent:2em;
+    font-size: 14px;
+    line-height: 28px;
+    color: rgb(153,153,153)
+}
+
+
+.sidebar {
+    padding-bottom: 28px;
+    border:solid 1px #ededed;
+    vertical-align: top;
+    background-color: #fff;
+}
+
+.sidebar-head {
+    line-height: 62px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    border-bottom:solid 1px #ededed;
+}
+
+.sidebar-list-group {
+    margin-top: 23px;
+    margin-bottom:0;
+    padding-left: 50%;
+}
+
+.sidebar-list {
+    margin-left: -36px;
+    line-height: 50px;
+    font-size: 0;
     color: #29b078;
 }
-.sidebar a:hover {
-    color: #ff650e;
+
+
+
+.yellow-ground {
+    display: inline-block;
+    width:10px;
+    height:10px;
+    border:solid 1px #ff650e;
+    border-radius: 50%;
 }
-.detail {
-    margin-bottom: 1.5rem;
-    font-size: .14rem;
-    line-height: .3rem;
+
+.list-link:hover .yellow-ground {
+    background-color: #f9a372;
+}
+
+.list-company {
+    font-size: 14px;
+    padding-left: 6px;
+    color: #29b078;
+}
+/*左侧列表的悬停变色*/
+.list-link:hover .list-company {
+    color:#ff650e;
+}
+
+.main-content {
+    display:inline-block;
+    padding-top: 18px;
+    padding-bottom: 22.22%;
+    font-size: 14px;
+    vertical-align: top;
+    border:solid 1px #ededed;
+    color: #999;
     background-color: #fff;
-    border: 1px #e6e6e6 solid;
-    border-radius: 4px;
-    box-shadow: 0 2px 5px #ddd;
 }
-@media screen and (min-width: 768px) {
-    .detail {
-        margin-left: 8.3%;
-    }
+
+.content-p {
+    margin-top: 32px;
+    margin-bottom: 0;
+    padding:0 62px;
+    line-height: 28px;
 }
-.first {
-    margin-left: auto;
-    margin-right: auto;
-    padding: .3rem 0;
-    font-size: .14rem;
-    line-height: .3rem;
-    color: #999;
-    border-bottom: 1px #e6e6e6 solid;
-}
-.first img {
-    float: left;
-    margin: .4rem;
-}
-.detail p {
-    padding: .2rem;
-    text-indent: .28rem;
-    color: #999;
-}
-.detail .last {
-    padding-bottom: 1.7rem;
+
+/*去除超链接所有状态的下划线*/
+a,a:visited,a:hover,a:link{
+    text-decoration:none;
 }
