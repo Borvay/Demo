@@ -76,7 +76,6 @@ a:active {
 }
 @media screen and (max-width: 768px) {
     .header-top p {
-        display: none;
     }
 }
 .icon-header1-weixin {
