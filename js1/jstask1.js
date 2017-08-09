@@ -1,7 +1,7 @@
 /**
  * Created by 李博为 on 2017/8/8 0000.
  */
-var wrap1=document.getElementById("wrap");1
+var wrap1=document.getElementById("wrap");
 var square=wrap1.getElementsByTagName("div");
 var ram1;
 var ram2;
