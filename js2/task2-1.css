@@ -1,3 +1,34 @@
 @charset "utf-8";
 
-.header
+.header{
+    position: fixed;
+    top:0;
+    max-width: 640px;
+    z-index: 999;
+}
+
+.header-left{
+    max-width:34px;
+    width:5.312%;
+    margin-top:6.25%;
+    margin-left:3.44%;
+    margin-bottom:3.28%;
+}
+
+.main{
+    padding:4% 5.62% 9.68%;
+}
+
+.main-header{
+    margin-top:.88rem;
+    margin-bottom:4.0625%;
+    font-size:.3484rem;
+    line-height:1.16rem;
+}
+
+.forward{
+    top:35%;
+    right:2.622%;
+    max-width:24px;
+    width:4.22%;
+}
