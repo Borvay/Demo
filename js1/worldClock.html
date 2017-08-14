@@ -10,12 +10,15 @@
 <body>
 <h1></h1>
 
-<div id="local"></div>
-<div id="localutc"></div>
-<div id="bombay"></div>
-<div id="singapore"></div>
-<div id="tokyo"></div>
-<div id="london"></div>
+<div id="Local"></div>
+<div id="Delhi"></div>
+<div id="Sydney"></div>
+<div id="Singapore"></div>
+<div id="Tokyo"></div>
+<div id="London"></div>
+<div id="Washington"></div>
+<div id="Reykjavik"></div>
+<div id="Cairo"></div>
 
 <script language="javascript" type="text/javascript">
     function calcTime(city, offset) {
@@ -86,12 +89,15 @@
         //return "The local time in " + city + " is " + nd.toLocaleString()+;
     }
     function worldClockZone(){
-        document.getElementById('local').innerHTML = "The local time is " + (new Date()).toLocaleString();
-        document.getElementById('localutc').innerHTML = "The local time is " + (new Date()).toLocaleString();
-        document.getElementById('bombay').innerHTML = calcTime('bombay', '+5.5');
-        document.getElementById('singapore').innerHTML = calcTime('singapore', '+8');
-        document.getElementById('tokyo').innerHTML = calcTime('tokyo', '+9');
-        document.getElementById('london').innerHTML =calcTime('london', '+1');
+        document.getElementById('Local').innerHTML = "The local time is " + (new Date()).toLocaleString();
+        document.getElementById('Delhi').innerHTML = calcTime('Delhi', '+2');
+        document.getElementById('Sydney').innerHTML = calcTime('Sydney', '+5.5');
+        document.getElementById('Singapore').innerHTML = calcTime('Singapore', '+8');
+        document.getElementById('Tokyo').innerHTML = calcTime('Tokyo', '-3');
+        document.getElementById('London').innerHTML =calcTime('London', '+1');
+        document.getElementById('Washington').innerHTML =calcTime('Washington', '+12');
+        document.getElementById('Reykjavik').innerHTML =calcTime('Reykjavik', '+10');
+        document.getElementById('Cairo').innerHTML =calcTime('Cairo', '-24');
         setTimeout("worldClockZone()", 1000)
     }
     window.onload=worldClockZone;

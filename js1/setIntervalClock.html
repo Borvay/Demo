@@ -1,0 +1,216 @@
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Document</title>-->
+    <!--<style>-->
+        <!--#clock{-->
+            <!--line-height: 80px;-->
+            <!--margin:0px auto;-->
+            <!--width: 500px;-->
+            <!--height: 80px;-->
+            <!--font-size: 20px;-->
+            <!--color: white;-->
+            <!--background-color: black;-->
+            <!--text-align: center;-->
+        <!--}-->
+    <!--</style>-->
+<!--</head>-->
+<!--<body>-->
+<!--<div id="clock"></div>-->
+<!--</body>-->
+<!--<script>-->
+    <!--setInterval("ss()",1000);-->
+    <!--function ss(){-->
+        <!--var clock=document.getElementById("clock");-->
+        <!--var dd=new Date();-->
+        <!--clock.innerHTML=dd.toLocaleString();-->
+    <!--}-->
+    <!--//toLocaleDateString() 日期-->
+    <!--//toLocaleTimeString()  时间-->
+    <!--//toLocaleString()   日期加时间-->
+<!--</script>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<html>-->
+<!--<head>-->
+    <!--<script language="javascript">-->
+        <!--function showtime() {-->
+            <!--var time = new Date();-->
+            <!--var hour = time.getHours();-->
+            <!--var minute = time.getMinutes();-->
+            <!--var seconds = time.getSeconds();-->
+            <!--document.getElementById("show").value=hour+ ":" + minute + ":" + seconds;-->
+            <!--var time = setTimeout("showtime()",1000);-->
+        <!--}-->
+        <!--function aa() {-->
+            <!--setTimeout("showtime()",1000);-->
+        <!--}-->
+    <!--</script>-->
+    <!--<style type="text/css">-->
+        <!--Input {-->
+            <!--border-style:none}-->
+    <!--</style>-->
+<!--</head>-->
+<!--<body onload="showtime()">-->
+<!--<form>-->
+    <!--<Input id='show' type='text'>-->
+<!--</form>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <title>世界时间，JS网页特效</title>
+</head>
+<body bgcolor="#ffffff" onLoad="javascript:GetTime();">
+<script LANGUAGE="JavaScript">
+    <!-- Begin
+    function GetTime() {
+        var dt = new Date();
+        var def = dt.getTimezoneOffset()/60;
+        var gmt = (dt.getHours() + def);
+        document.clock.local.value = (IfZero(dt.getHours()) + ":" + IfZero(dt.getMinutes()) + ":" + IfZero(dt.getSeconds()));
+        var ending = ":" + IfZero(dt.getMinutes()) + ":" + IfZero(dt.getSeconds());
+        var rome =check24(((gmt + 1) > 24) ? ((gmt + 1) - 24) : (gmt + 1));
+        document.clock.rome.value = (IfZero(rome) + ending);
+        var isr =check24(((gmt + 2) > 24) ? ((gmt + 2) - 24) : (gmt + 2));
+        document.clock.Israel.value = (IfZero(isr) + ending);
+        var msw =check24(((gmt + 3) > 24) ? ((gmt + 3) - 24) : (gmt + 3));
+        document.clock.msw.value = (IfZero(msw) + ending);
+        var baku =check24(((gmt + 4) > 24) ? ((gmt + 4) - 24) : (gmt + 4));
+        document.clock.baku.value = (IfZero(baku) + ending);
+        var del =check24(((gmt + 5) > 24) ? ((gmt + 5) - 24) : (gmt + 5));
+        document.clock.del.value = (IfZero(del) + ending);
+        var dh =check24(((gmt + 6) > 24) ? ((gmt + 6) - 24) : (gmt + 6));
+        document.clock.dh.value = (IfZero(dh) + ending);
+        var kok =check24(((gmt +7 ) > 24) ? ((gmt +7 ) - 24) : (gmt + 7));
+        document.clock.kok.value = (IfZero(kok) + ending);
+        var ho =check24(((gmt + 8) > 24) ? ((gmt + 8) - 24) : (gmt + 8));
+        document.clock.ho.value = (IfZero(ho) + ending);
+        var tky =check24(((gmt + 9) > 24) ? ((gmt + 9) - 24) : (gmt + 9));
+        document.clock.tky.value = (IfZero(tky) + ending);
+        var sdn =check24(((gmt + 10) > 24) ? ((gmt + 10) - 24) : (gmt + 10));
+        document.clock.sdn.value = (IfZero(sdn) + ending);
+        var mag =check24(((gmt + 11) > 24) ? ((gmt + 11) - 24) : (gmt + 11));
+        document.clock.mag.value = (IfZero(mag) + ending);
+        var wll =check24(((gmt + 12) > 24) ? ((gmt + 12) - 24) : (gmt + 12));
+        document.clock.wll.value = (IfZero(wll) + ending);
+        var _GMT =check24(((gmt) > 24) ? ((gmt) - 24) : (gmt));
+        document.clock._GMT.value = (IfZero(_GMT) + ":" + IfZero(dt.getMinutes()) + ":" + IfZero(dt.getSeconds()));
+        var eniw =check24(((gmt + (24-12)) > 24) ? ((gmt + (24-12)) - 24) : (gmt + (24-12)));
+        document.clock.eniw.value = (IfZero(eniw) + ending);
+        var sam =check24(((gmt + (24-11)) > 24) ? ((gmt + (24-11)) - 24) : (gmt + (24-11)));
+        document.clock.sam.value = (IfZero(sam) + ending);
+        var haw =check24(((gmt + (24-10)) > 24) ? ((gmt + (24-10)) - 24) : (gmt + (24-10)));
+        document.clock.Hawaii.value = (IfZero(haw) + ending);
+        var ala =check24(((gmt + (24-9)) > 24) ? ((gmt + (24-9)) - 24) : (gmt + (24-9)));
+        document.clock.alaska.value = (IfZero(ala) + ending);
+        var pacif =check24(((gmt + (24-8)) >= 24) ? ((gmt + (24-8)) - 24) : (gmt + (24-8)));
+        document.clock.pacif.value = (IfZero(pacif) + ending);
+        var mount =check24(((gmt + (24-7)) > 24) ? ((gmt + (24-7)) - 24) : (gmt + (24-7)));
+        document.clock.mount.value = (IfZero(mount) + ending);
+        var center =check24(((gmt + (24-6)) > 24) ? ((gmt + (24-6)) - 24) : (gmt + (24-6)));
+        document.clock.center.value = (IfZero(center) + ending);
+        var east =check24(((gmt + (24-5)) > 24) ? ((gmt + (24-5)) - 24) : (gmt + (24-5)));
+        document.clock.east.value = (IfZero(east) + ending);
+        var atl =check24(((gmt + (24-4)) > 24) ? ((gmt + (24-4)) - 24) : (gmt + (24-4)));
+        document.clock.atl.value = (IfZero(atl) + ending);
+        var bra =check24(((gmt + (24-3)) > 24) ? ((gmt + (24-3)) - 24) : (gmt + (24-3)));
+        bra = (bra >= 24) ? bra - 24 : bra;
+        document.clock.bra.value = (IfZero(bra) + ending);
+        var mid =check24(((gmt + (24-2)) > 24) ? ((gmt + (24-2)) - 24) : (gmt + (24-2)));
+        mid = (mid >= 24) ? mid - 24 : mid;
+        document.clock.mid.value = (IfZero(mid) + ending);
+        var azo =check24(((gmt + (24-1)) > 24) ? ((gmt + (24-1)) - 24) : (gmt + (24-1)));
+        azo = (azo >= 24) ? azo - 24 : azo;
+        document.clock.azo.value = (IfZero(azo) + ending);
+        setTimeout("GetTime()", 1000);
+    }
+    function IfZero(num) {
+        return ((num <= 9) ? ("0" + num) : num);
+    }
+    function check24(hour) {
+        return (hour >= 24) ? hour - 24 : hour;
+    }
+    // End -->
+</script>
+<form name="clock">
+    <strong>Local Time <input type="text" size="8" name="local"></strong>
+    <p>
+        埃尼威托克岛 (GMT-12) <input type="text" size="8" name="eniw"><br>
+        萨摩亚群岛 (GMT-11) <input type="text" size="8" name="sam"><br>
+        夏威夷 (GMT-10) <input type="text" size="8" name="Hawaii">
+    <p>
+        阿拉斯加 (GMT-9) <input type="text" size="8" name="alaska"><br>
+        太平洋时间 (GMT-8) <input type="text" size="8" name="pacif"><br>
+        山脉时间 (GMT-7) <input type="text" size="8" name="mount">
+    <p>
+        中央标准时间 (GMT-6) <input type="text" size="8" name="center"><br>
+        东部时间 (GMT-5) <input type="text" size="8" name="east"><br>
+        大西洋时间 (GMT-4) <input type="text" size="8" name="atl">
+    <p>
+        Brazilia (GMT-3) <input type="text" size="8" name="bra"><br>
+        大西洋中部时间(GMT-2) <input type="text" size="8" name="mid"><br>
+        亚述尔群岛 (GMT-1) <input type="text" size="8" name="azo">
+    <p>
+        <strong>格林尼治标准时间 (GMT) <input type="text" size="8" name="_GMT"></strong>
+    <p>
+        罗马 (GMT +1) <input type="text" size="8" name="rome"><br>
+        以色列 (GMT +2) <input type="text" size="8" name="Israel"><br>
+        莫斯科 (GMT +3) <input type="text" size="8" name="msw">
+    <p>
+        巴库 (GMT +4) <input type="text" size="8" name="baku"><br>
+        New Delhi (GMT +5) <input type="text" size="8" name="del"><br>
+        Dhakar (GMT +6) <input type="text" size="8" name="dh">
+    <p>
+        曼谷 (GMT +7) <input type="text" size="8" name="kok"><br>
+        香港 (GMT +8) <input type="text" size="8" name="ho"><br>
+        东京 (GMT +9) <input type="text" size="8" name="tky">
+    <p>
+        悉尼 (GMT +10) <input type="text" size="8" name="sdn"><br>
+        Magadan (GMT +11) <input type="text" size="8" name="mag"><br>
+        惠灵顿 (GMT +12) <input type="text" size="8" name="wll">
+</form>
+</body>
+</html>
