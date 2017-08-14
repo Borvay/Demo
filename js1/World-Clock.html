@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <title>世界时间</title>
+    <meta name="author" content="Geovin Du 塗聚文"/>
+</head>
+
+<body>
+<h1></h1>
+
+<div id="local"></div>
+<div id="localutc"></div>
+<div id="bombay"></div>
+<div id="singapore"></div>
+<div id="tokyo"></div>
+<div id="london"></div>
+
+<script language="javascript" type="text/javascript">
+    function calcTime(city, offset) {
+        var d = new Date();
+        utc = d.getTime() + (d.getTimezoneOffset() * 60000);
+        var nd = new Date(utc + (3600000 * offset));
+        var gmtTime = new Date(utc)
+        var day = nd.getDate();
+        var month = nd.getMonth();
+        var year = nd.getYear();
+        var hr = nd.getHours(); //+ offset
+        var min = nd.getMinutes();
+        var sec = nd.getSeconds();
+        if(year < 1000){
+            year += 1900
+        }
+        var monthArray = new Array("January", "February", "March", "April", "May", "June", "July", "August",
+            "September", "October", "November", "December")
+        var monthDays = new Array("31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31")
+        if (year%4 == 0){
+            monthDays = new Array("31", "29", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31")
+        }
+        if(year%100 == 0 && year%400 != 0){
+            monthDays = new Array("31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31")
+        }
+        if (hr >= 24){
+            hr = hr-24
+            day -= -1
+        }
+        if (hr < 0){
+            hr -= -24
+            day -= 1
+        }
+        if (hr < 10){
+            hr = " " + hr
+        }
+        if (min < 10){
+            min = "0" + min
+        }
+        if (sec < 10){
+            sec = "0" + sec
+        }
+        if (day <= 0){
+            if (month == 0){
+                month = 11
+                year -= 1
+            }
+            else{
+                month = month -1
+            }
+            day = monthDays[month]
+        }
+        if(day > monthDays[month]){
+            day = 1
+            if(month == 11){
+                month = 0
+                year -= -1
+            }
+            else{
+                month -= -1
+            }
+        }
+
+
+
+        return city+":The local time is"+monthArray[month] + " " + day + ", " + year + "<br>" + hr + ":" + min + ":" + sec
+
+        //return "The local time in " + city + " is " + nd.toLocaleString()+;
+    }
+    function worldClockZone(){
+        document.getElementById('local').innerHTML = "The local time is " + (new Date()).toLocaleString();
+        document.getElementById('localutc').innerHTML = "The local time is " + (new Date()).toLocaleString();
+        document.getElementById('bombay').innerHTML = calcTime('bombay', '+5.5');
+        document.getElementById('singapore').innerHTML = calcTime('singapore', '+8');
+        document.getElementById('tokyo').innerHTML = calcTime('tokyo', '+9');
+        document.getElementById('london').innerHTML =calcTime('london', '+1');
+        setTimeout("worldClockZone()", 1000)
+    }
+    window.onload=worldClockZone;
+</script>
+<hr/>
+<address></address>
+<!-- hhmts start --> Last modified: Mon Oct 31 02:04:17 BRST 2011 <!-- hhmts end -->
+</body>
+
+</html>
