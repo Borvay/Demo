@@ -1,93 +1,93 @@
-@media only screen and (max-width:768px){
+@media only screen and (max-width: 768px) {
     body {
         max-width: 450px;
     }
 }
 
-#Local{
+#Local {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:24px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 24px;
     display: inline-block;
 }
 
-#Delhi{
+#Delhi {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     display: inline-block;
 }
 
-#Sydney{
+#Sydney {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
 
-#Singapore{
+#Singapore {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
 
-#Tokyo{
+#Tokyo {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
 
-#London{
+#London {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
 
-#Washington{
+#Washington {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
 
-#Reykjavik{
+#Reykjavik {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
 
-#Cairo{
+#Cairo {
     background: #f3f3f3;
-    padding:15px 10px 11px 20px;
-    margin-bottom:15px;
-    color:#878787;
-    font-size:12px;
+    padding: 15px 10px 11px 20px;
+    margin-bottom: 15px;
+    color: #878787;
+    font-size: 12px;
     text-align: left;
     display: inline-block;
 }
@@ -98,7 +98,7 @@
     line-height: 1.4;
     color: #333;
     background-color: #fff;
-    border: 1px solid #ccc;
+
     border-radius: 10px;
 
 }
@@ -114,7 +114,7 @@
     line-height: 1.4;
     color: #333;
     background-color: #fff;
-    border: 1px solid #ccc;
+
     border-radius: 10px;
 
 }

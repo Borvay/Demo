@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>世界时间</title>
     <meta name="author" content="Borvay 李博为"/>
@@ -41,88 +42,89 @@
         var hr = nd.getHours(); //+ offset
         var min = nd.getMinutes();
         var sec = nd.getSeconds();
-        if(year < 1000){
+        if (year < 1000) {
             year += 1900
         }
         var monthArray = new Array("January", "February", "March", "April", "May", "June", "July", "August",
             "September", "October", "November", "December")
         var monthDays = new Array("31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31")
-        if (year%4 == 0){
+        if (year % 4 == 0) {
             monthDays = new Array("31", "29", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31")
         }
-        if(year%100 == 0 && year%400 != 0){
+        if (year % 100 == 0 && year % 400 != 0) {
             monthDays = new Array("31", "28", "31", "30", "31", "30", "31", "31", "30", "31", "30", "31")
         }
-        if (hr >= 24){
-            hr = hr-24
+        if (hr >= 24) {
+            hr = hr - 24
             day -= -1
         }
-        if (hr < 0){
+        if (hr < 0) {
             hr -= -24
             day -= 1
         }
-        if (hr < 10){
+        if (hr < 10) {
             hr = " " + hr
         }
-        if (min < 10){
+        if (min < 10) {
             min = "0" + min
         }
-        if (sec < 10){
+        if (sec < 10) {
             sec = "0" + sec
         }
-        if (day <= 0){
-            if (month == 0){
+        if (day <= 0) {
+            if (month == 0) {
                 month = 11
                 year -= 1
             }
-            else{
-                month = month -1
+            else {
+                month = month - 1
             }
             day = monthDays[month]
         }
-        if(day > monthDays[month]){
+        if (day > monthDays[month]) {
             day = 1
-            if(month == 11){
+            if (month == 11) {
                 month = 0
                 year -= -1
             }
-            else{
+            else {
                 month -= -1
             }
         }
 
 
-
-        return city+":The local time is "+monthArray[month] + " " + day + ", " + year + "<br>" + hr + ":" + min + ":" + sec
+        return city + ":The local time is " + monthArray[month] + " " + day + ", " + year + "<br>" + hr + ":" + min + ":" + sec
 
         //return "The local time in " + city + " is " + nd.toLocaleString()+;
     }
-    function worldClockZone(){
+
+    function worldClockZone() {
         document.getElementById('Local').innerHTML = "The local time is " + (new Date()).toLocaleString();
         document.getElementById('Delhi').innerHTML = calcTime('Delhi', '+2');
         document.getElementById('Sydney').innerHTML = calcTime('Sydney', '+5.5');
         document.getElementById('Singapore').innerHTML = calcTime('Singapore', '+8');
         document.getElementById('Tokyo').innerHTML = calcTime('Tokyo', '-3');
-        document.getElementById('London').innerHTML =calcTime('London', '+1');
-        document.getElementById('Washington').innerHTML =calcTime('Washington', '+12');
-        document.getElementById('Reykjavik').innerHTML =calcTime('Reykjavik', '+10');
-        document.getElementById('Cairo').innerHTML =calcTime('Cairo', '-24');
+        document.getElementById('London').innerHTML = calcTime('London', '+1');
+        document.getElementById('Washington').innerHTML = calcTime('Washington', '+12');
+        document.getElementById('Reykjavik').innerHTML = calcTime('Reykjavik', '+10');
+        document.getElementById('Cairo').innerHTML = calcTime('Cairo', '-24');
         setTimeout("worldClockZone()", 1000)
     }
-    window.onload=worldClockZone;
 
-    var stop=document.getElementById("stop");
+    window.onload = worldClockZone;
+
+    var stop = document.getElementById("stop");
     var intervalId;
 
-    function clock(){
-        var t=new Date();
-        var s=t.toLocaleTimeString();
+    function clock() {
+        var t = new Date();
+        var s = t.toLocaleTimeString();
         document.getElementById("time").innerHTML = s;
     }
 
     document
         .querySelector('#startBtn')
-        .addEventListener('click', function(){
+        .addEventListener('click', function () {
             intervalId = setInterval(clock, 50);
             this.disabled = true;
             document.querySelector('#stopBtn').disabled = false;
@@ -130,7 +132,7 @@
 
     document
         .querySelector('#stopBtn')
-        .addEventListener('click', function(){
+        .addEventListener('click', function () {
             clearTimeout(intervalId);
             this.disabled = true;
             document.querySelector('#startBtn').disabled = false;
@@ -141,7 +143,7 @@
 
 <hr/>
 <address></address>
-<!-- hhmts start --> Last modified: Mon August 14 22:30:00  2017 <!-- hhmts end -->
+<!-- hhmts start --> Last modified: Mon August 14 22:30:00 2017 <!-- hhmts end -->
 </body>
 
 </html>
