@@ -92,3 +92,25 @@
     display: inline-block;
 }
 
+.btn {
+    display: inline-block;
+    padding: 2% 4%;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+.btn-group {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+}
