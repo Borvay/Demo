@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <title>世界时间</title>
     <meta name="author" content="Borvay 李博为"/>
+    <link rel="stylesheet" href="./worldClock.css">
 </head>
 
 <body>
@@ -27,7 +28,7 @@
         var d = new Date();
         utc = d.getTime() + (d.getTimezoneOffset() * 60000);
         var nd = new Date(utc + (3600000 * offset));
-        var gmtTime = new Date(utc)
+        var gmtTime = new Date(utc);
         var day = nd.getDate();
         var month = nd.getMonth();
         var year = nd.getYear();
@@ -86,7 +87,7 @@
 
 
 
-        return city+":The local time is"+monthArray[month] + " " + day + ", " + year + "<br>" + hr + ":" + min + ":" + sec
+        return city+":The local time is "+monthArray[month] + " " + day + ", " + year + "<br>" + hr + ":" + min + ":" + sec
 
         //return "The local time in " + city + " is " + nd.toLocaleString()+;
     }
