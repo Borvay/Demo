@@ -23,10 +23,11 @@
 <div id="Reykjavik"></div>
 <div id="Cairo"></div>
 
-<div class="btn-group">
-    <button class="btn" id="btn1">strat</button>
-    <button class="btn" id="btn2">reset</button>
-</div>
+<div id="time"></div>
+
+
+<button id="stopBtn">时光停留</button>
+<button id="startBtn">开始流走</button>
 
 <script language="javascript" type="text/javascript">
     function calcTime(city, offset) {
@@ -110,9 +111,34 @@
     }
     window.onload=worldClockZone;
 
+    var stop=document.getElementById("stop");
+    var intervalId;
 
+    function clock(){
+        var t=new Date();
+        var s=t.toLocaleTimeString();
+        document.getElementById("time").innerHTML = s;
+    }
+
+    document
+        .querySelector('#startBtn')
+        .addEventListener('click', function(){
+            intervalId = setInterval(clock, 50);
+            this.disabled = true;
+            document.querySelector('#stopBtn').disabled = false;
+        }, false);
+
+    document
+        .querySelector('#stopBtn')
+        .addEventListener('click', function(){
+            clearTimeout(intervalId);
+            this.disabled = true;
+            document.querySelector('#startBtn').disabled = false;
+        }, false);
 
 </script>
+
+
 <hr/>
 <address></address>
 <!-- hhmts start --> Last modified: Mon August 14 22:30:00  2017 <!-- hhmts end -->
