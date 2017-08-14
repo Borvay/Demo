@@ -91,3 +91,35 @@
     text-align: left;
     display: inline-block;
 }
+
+#stopBtn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+#stopBtn:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
+
+#startBtn {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.4;
+    color: #333;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+
+}
+
+#startBtn:hover {
+    background-color: #e6e6e6;
+    border-color: #adadad;
+}
