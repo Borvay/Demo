@@ -17,8 +17,124 @@ body {
     width: 32.33%;
     margin: .5%;
     padding: 16.165% 0;
-    background-color: #fcf108;
+    background-color: #fc030c;
     border-radius: 15%;
     outline: none;
 }
 
+#button{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn1:hover {
+    background-color: #35e61f;
+}
+#show1{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button2{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn2:hover {
+    background-color: #35e61f;
+}
+#show2{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button3{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn3:hover {
+    background-color: #35e61f;
+}
+#show3{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button4{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn4:hover {
+    background-color: #35e61f;
+}
+#show4{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button5{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn5:hover {
+    background-color: #35e61f;
+}
+#show5{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button6{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn6:hover {
+    background-color: #35e61f;
+}
+#show6{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button7{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn7:hover {
+    background-color: #35e61f;
+}
+#show7{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button8{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn8:hover {
+    background-color: #35e61f;
+}
+#show8{
+    color: #333;
+    border-radius: 10px;
+}
+
+#button9{
+    font-size: 14px;
+    color: #333;
+    border-radius: 10px;
+}
+#btn9:hover {
+    background-color: #35e61f;
+}
+#show9{
+    color: #333;
+    border-radius: 10px;
+}
