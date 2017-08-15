@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Date对象</title></head>
+<body>
+<form name="form1" >
+    <input name="show" style="width: 200px;height: 30px;border: 2px solid blue">
+    <input type="button" name="button" id="button" value="点击时间器"></form>
+<script>
+
+    var otbn = document.getElementById("button");
+    var x;
+    otbn.onclick = function () {
+        if (x) {                         //点击一次开始走时，再点一次停止走时
+            window.clearInterval(x);
+            x = null;
+            return;
+        }
+        x = window.setInterval(function () {
+            var now = new Date();  //获取 Date对象
+            var year = now.getFullYear(); //获取年份
+            var month = now.getMonth(); //获取月份
+            var day = now.getDate();  //呼气日期
+            var weeker = now.getDay();//获取星期
+            var hour = now.getHours();//获取小时
+            var minu = now.getMinutes();//获取分钟
+            var secon = now.getSeconds(); //获取秒
+            month = month + 1;
+            //获取中文星期几
+            var arr_week = new Array("星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六");
+            var week = arr_week[weeker];
+            var time = year + "年" + month + "月" + day + "日" + week + " " + hour + ":" + minu + ":" + secon;
+            form1.show.value = time;
+        }, 1000);
+    }
+
+</script>
+</body>
+</html>
