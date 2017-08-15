@@ -164,13 +164,34 @@
 </head>
 <body>
 
-<div id="time"><p>The local time</p></div>
+<div id="time"><p>Beijing<br><br>Local Time<br><br>小旅馆时间</p></div>
 <button id="stopBtn">时光静止</button>
 <button id="startBtn">时间流动</button>
 
 <div id="time1"><p>London</p></div>
 <button id="stopBtn1">时光静止</button>
 <button id="startBtn1">时间流动</button>
+
+<div id="time2"><p>Sydney</p></div>
+<button id="stopBtn2">时光静止</button>
+<button id="startBtn2">时间流动</button>
+
+<div id="time3"><p>Singapore </p></div>
+<button id="stopBtn3">时光静止</button>
+<button id="startBtn3">时间流动</button>
+
+<div id="time4"><p>Tokyo </p></div>
+<button id="stopBtn4">时光静止</button>
+<button id="startBtn4">时间流动</button>
+
+<div id="time5"><p>Cairo </p></div>
+<button id="stopBtn5">时光静止</button>
+<button id="startBtn5">时间流动</button>
+
+<div id="time6"><p>Washington </p></div>
+<button id="stopBtn6">时光静止</button>
+<button id="startBtn6">时间流动</button>
+
 
 
 <script>
@@ -180,7 +201,7 @@
     function clock() {
         var t = new Date();
         var s = t.toLocaleTimeString();
-        document.getElementById("time").innerHTML = s;
+        document.getElementById("time").innerHTML = s + ("<br>监狱旅馆<br>酒桶旅馆<br>飞机旅馆<br>冰屋旅馆<br>水下旅馆<br>木狗旅馆<br>救生艇旅馆<br>下水道旅馆") ;
     }
 
     document
@@ -202,8 +223,13 @@
 
     function London() {
         var t = new Date();
-        var s = t.toLocaleTimeString();
-        document.getElementById("time1").innerHTML = s ;
+        localTime = t.getTime();
+        localOffset=t.getTimezoneOffset()*60000; //获得当地时间偏移的毫秒数
+        utc = localTime + localOffset; //utc即GMT时间
+        offset =10;
+        London = utc + (3600000*offset);
+        nd = new Date(London);
+        document.getElementById("time1").innerHTML = nd ;
 
     }
 
@@ -222,5 +248,148 @@
             this.disabled = true;
             document.querySelector('#startBtn1').disabled = false;
         }, false);
+
+    function Sydney() {
+        var t = new Date();
+        localTime = t.getTime();
+        localOffset=t.getTimezoneOffset()*60000; //获得当地时间偏移的毫秒数
+        utc = localTime + localOffset; //utc即GMT时间
+        offset =5;
+        Sydney = utc + (3600000*offset);
+        nd = new Date(Sydney);
+        document.getElementById("time2").innerHTML = nd ;
+
+    }
+
+    document
+        .querySelector('#startBtn2')
+        .addEventListener('click', function () {
+            intervalId = setInterval(Sydney, 50);
+            this.disabled = true;
+            document.querySelector('#stopBtn2').disabled = false;
+        }, false);
+
+    document
+        .querySelector('#stopBtn2')
+        .addEventListener('click', function () {
+            clearTimeout(intervalId);
+            this.disabled = true;
+            document.querySelector('#startBtn2').disabled = false;
+        }, false);
+
+
+    function Singapore() {
+        var t = new Date();
+        localTime = t.getTime();
+        localOffset=t.getTimezoneOffset()*60000; //获得当地时间偏移的毫秒数
+        utc = localTime + localOffset; //utc即GMT时间
+        offset =16;
+        Singapore = utc + (3600000*offset);
+        nd = new Date(Singapore);
+        document.getElementById("time3").innerHTML = nd ;
+
+    }
+
+    document
+        .querySelector('#startBtn3')
+        .addEventListener('click', function () {
+            intervalId = setInterval(Singapore, 50);
+            this.disabled = true;
+            document.querySelector('#stopBtn3').disabled = false;
+        }, false);
+
+    document
+        .querySelector('#stopBtn3')
+        .addEventListener('click', function () {
+            clearTimeout(intervalId);
+            this.disabled = true;
+            document.querySelector('#startBtn3').disabled = false;
+        }, false);
+
+
+    function Tokyo() {
+        var t = new Date();
+        localTime = t.getTime();
+        localOffset=t.getTimezoneOffset()*60000; //获得当地时间偏移的毫秒数
+        utc = localTime + localOffset; //utc即GMT时间
+        offset =20;
+        Tokyo = utc + (3600000*offset);
+        nd = new Date(Tokyo);
+        document.getElementById("time4").innerHTML = nd ;
+
+    }
+
+    document
+        .querySelector('#startBtn4')
+        .addEventListener('click', function () {
+            intervalId = setInterval(Tokyo, 50);
+            this.disabled = true;
+            document.querySelector('#stopBtn4').disabled = false;
+        }, false);
+
+    document
+        .querySelector('#stopBtn4')
+        .addEventListener('click', function () {
+            clearTimeout(intervalId);
+            this.disabled = true;
+            document.querySelector('#startBtn4').disabled = false;
+        }, false);
+
+    function Cairo() {
+        var t = new Date();
+        localTime = t.getTime();
+        localOffset=t.getTimezoneOffset()*60000; //获得当地时间偏移的毫秒数
+        utc = localTime + localOffset; //utc即GMT时间
+        offset =18;
+        Cairo = utc + (3600000*offset);
+        nd = new Date(Cairo);
+        document.getElementById("time5").innerHTML = nd ;
+
+    }
+
+    document
+        .querySelector('#startBtn5')
+        .addEventListener('click', function () {
+            intervalId = setInterval(Cairo, 50);
+            this.disabled = true;
+            document.querySelector('#stopBtn5').disabled = false;
+        }, false);
+
+    document
+        .querySelector('#stopBtn5')
+        .addEventListener('click', function () {
+            clearTimeout(intervalId);
+            this.disabled = true;
+            document.querySelector('#startBtn5').disabled = false;
+        }, false);
+
+    function Washington() {
+        var t = new Date();
+        localTime = t.getTime();
+        localOffset=t.getTimezoneOffset()*60000; //获得当地时间偏移的毫秒数
+        utc = localTime + localOffset; //utc即GMT时间
+        offset =22;
+        Washington = utc + (3600000*offset);
+        nd = new Date(Washington);
+        document.getElementById("time6").innerHTML = nd ;
+
+    }
+
+    document
+        .querySelector('#startBtn6')
+        .addEventListener('click', function () {
+            intervalId = setInterval(Washington, 50);
+            this.disabled = true;
+            document.querySelector('#stopBtn6').disabled = false;
+        }, false);
+
+    document
+        .querySelector('#stopBtn6')
+        .addEventListener('click', function () {
+            clearTimeout(intervalId);
+            this.disabled = true;
+            document.querySelector('#startBtn6').disabled = false;
+        }, false);
+
 </script>
 </body>
