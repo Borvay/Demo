@@ -1,0 +1,22 @@
+@charset "utf-8";
+
+body {
+    width: 100%;
+    max-width: 480px;
+    margin: auto;
+}
+
+#wrap {
+    overflow: hidden;
+    width: 100%;
+}
+
+.square {
+    float: left;
+    width: 32.33%;
+    margin: .5%;
+    padding: 16.165% 0;
+    background-color: #fafcf8;
+    border-radius: 15%;
+}
+
