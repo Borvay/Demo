@@ -9,6 +9,7 @@ body {
 #wrap {
     overflow: hidden;
     width: 100%;
+
 }
 
 .square {
@@ -18,5 +19,5 @@ body {
     padding: 16.165% 0;
     background-color: #fafcf8;
     border-radius: 15%;
+    outline: none;
 }
-
