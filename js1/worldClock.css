@@ -1,96 +1,96 @@
-@media only screen and (max-width: 768px) {
-    body {
-        max-width: 450px;
-    }
-}
+/*@media only screen and (max-width: 768px) {*/
+    /*body {*/
+        /*max-width: 450px;*/
+    /*}*/
+/*}*/
 
-#Local {
-    background: #f3f3f3;
-    padding: 16px 16px 10px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 24px;
-    display: inline-block;
-}
+/*#Local {*/
+    /*background: #f3f3f3;*/
+    /*padding: 16px 16px 10px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 24px;*/
+    /*display: inline-block;*/
+/*}*/
 
-#Delhi {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    display: inline-block;
-}
+/*#Delhi {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*display: inline-block;*/
+/*}*/
 
-#Sydney {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    text-align: left;
-    display: inline-block;
-}
+/*#Sydney {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+    /*display: inline-block;*/
+/*}*/
 
-#Singapore {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    text-align: left;
-    display: inline-block;
-}
+/*#Singapore {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+    /*display: inline-block;*/
+/*}*/
 
-#Tokyo {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    text-align: left;
-    display: inline-block;
-}
+/*#Tokyo {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+    /*display: inline-block;*/
+/*}*/
 
-#London {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    text-align: left;
-    display: inline-block;
-}
+/*#London {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+    /*display: inline-block;*/
+/*}*/
 
-#Washington {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    text-align: left;
-    display: inline-block;
-}
+/*#Washington {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+    /*display: inline-block;*/
+/*}*/
 
-#Reykjavik {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    text-align: left;
-    display: inline-block;
-}
+/*#Reykjavik {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+    /*display: inline-block;*/
+/*}*/
 
-#Cairo {
-    background: #f3f3f3;
-    padding: 15px 10px 11px 20px;
-    margin-bottom: 15px;
-    color: #878787;
-    font-size: 12px;
-    text-align: left;
-    display: inline-block;
-}
+/*#Cairo {*/
+    /*background: #f3f3f3;*/
+    /*padding: 15px 10px 11px 20px;*/
+    /*margin-bottom: 15px;*/
+    /*color: #878787;*/
+    /*font-size: 12px;*/
+    /*text-align: left;*/
+    /*display: inline-block;*/
+/*}*/
 
 #stopBtn {
     display: inline-block;
