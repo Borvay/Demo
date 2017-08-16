@@ -1,46 +1,46 @@
 @charset "UTF-8";
 
-.header{
+.header {
     position: fixed;
-    top:0;
+    top: 0;
     max-width: 640px;
     z-index: 999;
 }
 
-.header-left{
-    max-width:34px;
-    width:5.312%;
-    margin-top:6.25%;
-    margin-left:3.44%;
-    margin-bottom:3.28%;
+.header-left {
+    max-width: 34px;
+    width: 5.3125%;
+    margin-top: 6.25%;
+    margin-left: 3.44%;
+    margin-bottom: 3.28%;
 }
 
-.main{
-    padding:4% 5.62% 9.68%;
+.main {
+    padding: 4% 5.625% 9.6875%;
 }
 
-.main-header{
-    margin-top:.88rem;
-    margin-bottom:4.0625%;
-    font-size:.3484rem;
-    line-height:1.16rem;
+.main-header {
+    margin-top: .88rem;
+    margin-bottom: 4.0625%;
+    font-size: .3484rem;
+    line-height: 1.16rem;
 }
 
-.forward{
-    top:35%;
-    right:2.622%;
-    max-width:24px;
-    width:4.22%;
+.forward {
+    top: 35%;
+    right: 2.622%;
+    max-width: 24px;
+    width: 4.22%;
 }
 
-.name{
+.name {
     font-size: .3774rem;
     line-height: .9rem;
     color: #fbb435;
-    border-bottom: 1px #fbb435 solid;
+    border-bottom: 1px #fbb435 solid ;
 }
 
-.version{
+.version {
     width: 81.34%;
     margin: 5% auto;
     font-size: .3208rem;
@@ -50,28 +50,28 @@
     border: 0;
 }
 
-.sum{
+.sum {
     font-size: .26rem;
     color: #787878;
 }
 
-.page{
+.pager {
     width: .9rem;
     height: .33rem;
     margin: 2% 41.65%;
 }
 
-.circle{
+.circle {
     width: .15rem;
     height: .15rem;
     margin: 4%;
+    border-radius: 50%;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
 }
 
 .circle-active,
-.circle:hover{
+.circle:hover {
     background: #69d1e9;
 }
 
@@ -85,5 +85,13 @@
     border-left: .233rem #fbb435 solid;
     border-bottom: .233rem transparent solid;
 }
+
+
+
+
+
+
+
+
 
 
