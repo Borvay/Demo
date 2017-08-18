@@ -29,9 +29,9 @@ function go() {
     var color2=ramColor();
     var color3=ramColor();
     //console.log为打印函数，用来调试显示
-    console.log(color1);
-    console.log(color2);
-    console.log(color3);
+    console.log(ram1);
+    console.log(ram2);
+    console.log(ram3);
     //定义三个随机数用来选定变色的三个格子
     function ran() {
         ram1=Math.floor(Math.random()*9);
@@ -41,6 +41,7 @@ function go() {
         while (ram1 == ram2 || ram2 == ram3 || ram1 == ram3) {
             ran();
         }
+
     }
     ran();
     function ramSquare() {
@@ -59,6 +60,7 @@ function timeram() {
     square[x[2]].style.backgroundColor = "#e78326";
     go();
     x=[ram1,ram2,ram3]
+    console.log(x);
 }
 
 function start() {
