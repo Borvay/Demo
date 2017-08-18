@@ -1,0 +1,39 @@
+body{
+    padding:0 auto;
+    max-width:720px;
+    min-width:320px;
+    margin:0 auto;
+}
+.case{
+    background-color: #000000;
+    height:100vh;
+}
+.arrows{
+    margin-left:1vh;
+    padding-top:1vh;
+}
+.logo{
+    text-align:center;
+}
+.text{
+    padding:18%;
+    color: #ffffff;;
+}
+.bottom{
+    text-align:center;
+}
+.images{
+    padding-bottom:8%;
+}
+.left{
+    float:left;
+    margin-left:15%;
+    padding-bottom:8%;
+    color: #ffffff;
+}
+.right{
+    float:right;
+    margin-right:15%;
+    padding-bottom:8%;
+    color: #ffffff;
+}
