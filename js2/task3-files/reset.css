@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+body,h1,h2,h3,h4,h5,h6,ul,ol,p{
+    margin: 0;
+}
+
+html {
+    font-size: 625%;
+    font-family: "Hiragino Sans GB", serif;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 500%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 400%;
+    }
+}
+
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+ul,ol,li {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: " ";
+}
+
+.clearfix:after {
+    clear: both;
+}

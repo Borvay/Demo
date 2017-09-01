@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mytask4-4</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1，maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <link rel="stylesheet" href="task4-4_files/reset.css">
+    <link rel="stylesheet" href="task4-4_files/task4-4.css">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <img src="task4-4_files/header-menu.png">
+        <span>投票</span>
+        <img src="task4-4_files/header-close.png">
+    </header>
+    <div class="main">
+        <p>发言讨论结束，大家请投票</p>
+        <audio controls="controls" id="music" preload="" hidden="" src="task4-4_files/cfzy.mp3"></audio>
+        <button id="a" onclick="a();">
+            <div class="circle">
+                <div class="triangle-right"></div>
+            </div>
+        </button>
+        <script>
+            function a() {
+                var audio = document.getElementById('music');
+                if (audio.paused) {
+                    audio.play();//audio.play();// 播放
+                }
+                else {
+                    audio.pause();// 暂停
+                }
+            }
+        </script>
+    </div>
+    <p class="p1">点击得票数最多人的头像</p>
+    <div class="vote" id="vote"></div>
+</div>
+<footer style="position: static;opacity: 0">
+    <div class="footer">确定</div>
+</footer>
+<footer id="btn">
+    <div class="footer">确定</div>
+</footer>
+
+<script src="task4-4_files/task4-4.js"></script>
+</body>
+</html>

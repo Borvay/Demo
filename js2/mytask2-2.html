@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mytask2-2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1">
+    <meta http-equiv="x-ua-compatible" content="IE=Edge">
+    <script src="task2-2_files/jquery-3.1.1.min.js"></script>
+    <script src="task2-2_files/RangeSlider.js"></script>
+    <link rel="stylesheet " href="task2-2_files/reset.css">
+    <link rel="stylesheet" href="task2-2_files/task2-2.css">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="container">
+            <img class="header-back" src="task2-2_files/header-back.png">
+            <h1>参数设置</h1>
+            <img class="header-help" src="task2-2_files/header-help.png">
+        </div>
+    </header>
+    <div class="main-top">
+        <div class="main-top-left clearfix">玩家配比</div>
+        <div class="main-top-right">
+            <ul class="assign">
+                <li>
+                    <span class="killer"></span>
+                    杀&nbsp;&nbsp;手
+                    <span id="role1-num">？ </span>
+                    人
+                </li>
+                <div id="x1"></div>
+                <li>
+                    <span class="civilian"></span>
+                    水&nbsp;&nbsp;民
+                    <span id="role2-num">？ </span>
+                    人
+                </li>
+                <div id="y1"></div>
+            </ul>
+            <button id="btn1">点击设置 &nbsp;<img src="task2-2_files/pencil.png"></button>
+        </div>
+    </div>
+
+    <div class="main-middle">
+        <label for="civilian-word"></label>
+        <input id="civilian-word" type="text" maxlength="30" value="通过逻辑分析抓出隐藏的杀手" placeholder="请输入水民角色提示">
+        <label for="killer-word"></label>
+        <input id="killer-word" type="text" maxlength="30" value="积极发言分析，尽可能的伪装成水民，刀法也很重要哦" placeholder="请输入杀手角色提示">
+    </div>
+    <div class="main-bottom" style="position: relative;z-index: 0;">
+        <p>玩家人数 &nbsp;<label for="num"></label><input type="number" id="num" value="6" min="6" max="18" maxlength="2">&nbsp; 人</p>
+        <span class="line"></span>
+        <div class="number">
+            <span id="sub" class="minus"><i></i></span>
+            <label for="range">
+                <input type="range" value="6" id="range" min="6" max="18" step="1">
+            </label>
+            <script>
+                var change = function($input) {
+                    /*内容可自行定义*/
+                    console.log("123");
+                };
+                $('#range').RangeSlider({ min: 6,   max: 18,  step: 1, value:6, callback: change});
+            </script>
+            <span id="add" class="plus"><i></i></span>
+        </div>
+    </div>
+    <input id="btn2" class="btn1" type="button" onclick="save()" value="去发牌">
+</div>
+<script src="task2-2_files/task2-2.js"></script>
+</body>
+</html>

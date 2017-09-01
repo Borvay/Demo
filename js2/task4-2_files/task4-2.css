@@ -1,0 +1,125 @@
+@charset "UTF-8";
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 17px 16px 17px;
+    background-color: #29bde0;
+    border-bottom: 1px solid #fff;
+}
+
+header span{
+    font-size: 34px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.background{
+    padding:34px 0 10px;
+    background-color: #f0f0f0;
+}
+
+.main{
+    width: 622px;
+    margin: 0 auto;
+    overflow: hidden;
+    border:1px solid #c9c9c9 ;
+    background-color: #f7f7f7;
+}
+
+p{
+    position: relative;
+    text-align: center;
+    line-height: 85px;
+    font-size: 30px;
+    color: #29bde0;
+    border-bottom: 1px solid #c9c9c9  ;
+}
+
+p img{
+    position: absolute;
+    right: 0;
+    padding: 34px 17px;
+}
+
+.sidebar{
+    float: left;
+    writing-mode: vertical-rl;
+    font-size: 0;
+    line-height: 75px;
+    height: 875px;
+}
+
+.sidebar span{
+    display: inline-block;
+}
+
+.string1{
+    width: 2px ;
+    height: 52px;
+    background-color: #c9c9c9;
+}
+
+.string2{
+    width: 2px;
+    height: 383px;
+    background-color: #c9c9c9;
+}
+
+.string3{
+    width: 2px;
+    height:315px ;
+    background-color: #c9c9c9;
+}
+
+.moon{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: solid 2px #c9c9c9 ;
+    background: url("moon.png") center no-repeat;
+}
+
+.sun{
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    border: solid 2px #c9c9c9 ;
+    background: url("sun.png") center no-repeat;
+}
+
+.night{
+    float: left;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
+.daytime{
+    float: left;
+    margin-top: 60px;
+    margin-left: 15px;
+}
+
+.night li,.daytime li {
+    position: relative;
+    margin-bottom: 20px;
+    width: 468px;
+    line-height: 76px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background-color: #24a7c6;
+    cursor: pointer;
+}
+
+li:before{
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 25px;
+    border-top: 11px solid  transparent;
+    border-bottom: 11px solid transparent;
+    border-left: 0;
+    border-right: 15px solid #24a7c6;
+}

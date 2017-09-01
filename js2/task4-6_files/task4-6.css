@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+.wrap  {
+    background-color: #29bde0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 17px 16px 17px;
+    background-color: #29bde0;
+    border-bottom: 1px solid #74d4eb;
+}
+
+header span {
+    font-size: 34px;
+    line-height: 50px;
+    color: #fff;
+}
+
+.victory {
+    width: 351px;
+    margin-top: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 140px;
+    padding-bottom: 20px;
+    font-size: 48px;
+    text-align: center;
+    line-height: 1;
+    color: #fff;
+    background-image: url("victory.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.p1 {
+    width: 478px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 33px;
+    font-weight: bold;
+    color: #ffc865;
+}
+
+.p2 {
+    margin-left: 72px;
+    font-size: 26px;
+    line-height: 38px;
+    color: #fff;
+}
+
+.day1 {
+    padding-top: 13px;
+    padding-bottom: 34px;
+    padding-left: 75px;
+    background-color: #fff;
+    border-bottom: 2px solid #ddd;
+}
+
+.p3 {
+    display: inline-block;
+    font-size: 26px;
+    line-height: 40px;
+    color: #a6a6a6;
+}
+
+.p5 {
+    font-size: 26px;
+    line-height: 40px;
+    color: #a6a6a6;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 640px;
+    padding-bottom: 22px;
+    text-align: center;
+    overflow: hidden;
+    background-color: rgba(41,189,224,.478);
+}
+
+.button-b1 {
+    float: left;
+    width: 270px;
+    height: 85px;
+    margin-top: 24px;
+    margin-left: 24px;
+    font-size: 40px;
+    color: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    background-color: #f66f6f;
+}
+
+.button-b2 {
+    float: right;
+    width: 270px;
+    height: 85px;
+    margin-top: 24px;
+    margin-right: 24px;
+    font-size: 40px;
+    color: #fff;
+    outline: none;
+    border: 0;
+    border-radius: 10px;
+    background-color: #fbb435;
+}

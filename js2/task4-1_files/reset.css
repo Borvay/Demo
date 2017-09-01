@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+body{
+    max-width: 640px;
+    margin: 0 auto;
+    font-family: "Microsoft YaHei", serif;
+}
+
+ul,li,p,button,input{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+}
+
+ul,li{
+    list-style: none;
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: inherit;
+}
