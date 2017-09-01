@@ -1,0 +1,57 @@
+/*æ¸…é™¤å¤–è¾¹è·*/
+body,h1,h2,h3,h4,h5,h6,ol,ul,li,form,span,a,i,p,textarea {
+    margin: 0;
+}
+/*æ¸…é™¤å†…è¾¹è·*/
+ul,ol {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+button,input {
+    border: 0;
+    outline: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: "Hiragino Sans GB","Microsoft YaHei", serif;
+    line-height: 1;
+}
+
+body {
+    min-width: 320px;
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
+}
+
+a,a:link,a:visited,a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*æ¸…é™¤æµ®åŠ¨*/
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}

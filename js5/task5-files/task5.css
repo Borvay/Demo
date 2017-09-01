@@ -1,0 +1,62 @@
+body {
+    background: url("background.jpg") no-repeat;
+    background-size: 100vw 100vh;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -195px 0 0 -268px;
+    width: 536px;
+    height: 391px;
+    text-align: center;
+    background-color: #d3d8e1;
+}
+
+h3 {
+    margin: 30px 0;
+    font-size: 30px;
+    color: #03a9f4;
+}
+
+form {
+    margin: 0 auto;
+    width: 438px;
+}
+
+.form-input {
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 18px 0;
+    background-color: #fff;
+}
+
+label {
+    display: inline-block;
+    padding: 3px 0;
+    width: 40px;
+    vertical-align: middle;
+}
+
+input {
+    width: 380px;
+    text-indent: 20px;
+    font-size: 16px;
+    vertical-align: middle;
+    border-left: 1px solid #e8e8e8;
+}
+
+button {
+    margin-top: 50px;
+    padding: 20px 0;
+    width: 438px;
+    font-size: 20px;
+    color: #fff;
+    background-color: #03a9f4;
+    border-radius: 5px;
+}
+
+.alert {
+    font-size: 20px;
+}
