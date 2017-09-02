@@ -1,0 +1,202 @@
+html {
+    font-size: 625%;
+}
+body {
+    margin: 0;
+    font-size: 14px;
+    height: 100%;
+}
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+a {
+    text-decoration: none;
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+/*导航栏部分*/
+
+.navLeft {
+    float: left;
+    width: 2.5rem;
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 18px;
+    font-weight: bolder;
+    text-align: center;
+    background: #232a3a;
+}
+.navbar-toggle {
+    background-color: #232a3a;
+    border: 1px solid #ffffff;
+}
+span.icon-bar {
+    background-color: #ffffff;
+}
+.navbar-brand {
+    float: none;
+    color: #ffffff;
+}
+.navRight {
+
+    line-height: 0.5rem;
+
+    font-size: 16px;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.navRight > a {
+    display: inline-block;
+    padding: 0 0.1rem;
+    min-width: 0.5rem;
+    text-align: center;
+    height: 0.5rem;
+    margin: auto 0.1rem;
+    color: #337ab7;
+    font-size: 14px;
+}
+.navRight > a:hover {
+    background: #eeeeee;
+}
+.navRight > span {
+    font-size: 14px;
+    color: #cccccc;
+}
+.navRight .icon3 {
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+}
+main {
+    position: absolute;
+    top: .5rem;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*min-height: calc(100% - 0.5rem);*/
+}
+/*侧边栏部分*/
+.sidebar {
+    float: left;
+    padding: 0.2rem 0 10rem;
+    width: 2.5rem;
+    font-size: 16px;
+    font-weight: bold;
+    background: #232a3a;
+    color: #ffffff;
+    border-top: 1px solid #4a5f6c;
+}
+
+li.panel {
+    margin: 0;
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    box-shadow: none;
+    background-color: #232a3a;
+}
+
+ul.nav > li.panel > a.managelist {
+    display: block;
+    color: #ffffff;
+    padding: 0.13rem 0.2rem ;
+    cursor: pointer;
+}
+ul.nav > li.panel > a.managelist:hover{
+    background: #7b7f89!important;
+ }
+a.managelist > span.pen {
+    font-size: 14px;
+    padding-right: 0.15rem;
+}
+a.managelist > span.arrowL {
+    font-size: 20px;
+    float: right;
+    padding-right: 0.25rem;
+}
+ul.detailslist > li.active {
+    background-color: #7b7f89;
+}
+ul.detailslist > li >a {
+    display: block;
+    width: 100%;
+    color: #ffffff;
+    padding: 0.08rem 0 0.08rem 0.7rem;
+    font-size: 14px;
+    font-weight: normal;
+}
+ul.detailslist > li >a:hover {
+    background: #7b7f89;
+}
+ul.detailslist > li >a:focus {
+    background: #7b7f89;
+    text-decoration: none;
+}
+@media only screen and (max-width: 768px){
+    .navLeft {
+        float: none;
+        width: 100%;
+        text-align: left;
+        padding-left: 0.3rem;
+    }
+    main {
+        top: 1rem;
+        background: #232a3a;
+    }
+    .sidebar {
+        float: none;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        overflow: auto;
+    }
+    ul.nav {
+        margin: 0;
+    }
+    div.msg {
+        margin: 0;
+        padding: 0;
+        height: auto;
+        min-height: 0;
+        width: 100%;
+    }
+    h1 {
+         margin: 0.3rem;
+         font-size: 36px;
+         overflow: hidden;
+     }
+    ul.nav li.panel > ul.collapse > li >a {
+        display: block;
+        width: 100%;
+        color: #ffffff;
+        padding: 0.08rem 0 0.08rem 0.7rem;
+    }
+}
+@media (min-width: 768px) {
+    div.navbar-collapse {
+        min-height: 100%!important;
+    }
+}
+/*主要内容部分-初始界面*/
+.msg {
+    position: relative;
+    overflow: auto;
+    height: 100%;
+    padding: 0.3rem ;
+    background: #f5f5f5;
+}
+h1 {
+    margin: 0.4rem;
+    font-size: 36px;
+    overflow: hidden;
+}
+
+

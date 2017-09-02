@@ -1,0 +1,85 @@
+<div ng-controller="listCtrl">
+<div class="container-fluid search ">
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <span class="intro">修改时间</span>
+            <input type="text" id="intro-time1" ng-model="starttime "  class="form_datetime" readonly>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <span class="intro">─</span>
+            <input type="text" id="intro-time2" ng-model="endtime"  class="form_datetime" readonly>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <span class="intro">类&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;型</span>
+            <select name="" id="intro-select1" ng-model="types">
+                <option value="" selected="selected">全部</option>
+                <option value="0" >首页Banner</option>
+                <option value="1" >找职位Banner</option>
+                <option value="2" >找精英Banner</option>
+                <option value="3" >行业大图</option>
+            </select>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-4 col-md-6">
+            <span class="intro">状&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;态</span>
+            <select name="" id="intro-select2" ng-model="statuss">
+                <option value="" selected="selected">全部</option>
+                <option value="2" >上线</option>
+                <option value="1" >草稿</option>
+            </select>
+        </div>
+    </div>
+    <div class="btn0">
+        <button id="btn1" ng-click="empty()">清空</button>
+        <button id="btn2" ng-click="search()">搜索</button>
+    </div>
+</div>
+<div class="list">
+    <div class="title">
+        Artilce列表
+        <button id="btn3">
+            <a href="" ui-sref="backstage.article-details">+新增</a>
+        </button>
+    </div>
+    <div class="data">
+        <div class="content-list">
+            <table class="table table-striped">
+                <thead>
+                    <tr class="table-title">
+                        <th>ID</th>
+                        <th>名称</th>
+                        <th>类型</th>
+                        <th>发布时间</th>
+                        <th>修改时间</th>
+                        <th>发布者</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                </thead>
+                <tbody >
+                    <tr ng-repeat="x in records|orderBy:'-updateAt'">
+                        <td>{{$index+1}}</td>
+                        <td>{{x.title}}</td>
+                        <td>{{x.type|typechange}}</td>
+                        <td>{{x.createAt|date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                        <td>{{x.updateAt|date:"yyyy-MM-dd HH:mm:ss"}}</td>
+                        <td>{{x.author}}</td>
+                        <td>{{x.status|statuschange}}</td>
+                        <td>
+                            <span ng-click="offline()">{{x.status|linechange}}</span>
+                            <span ng-click="editor()">编辑</span>
+                            <span ng-click="delete()">删除</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <tm-pagination conf="paginationConf">
+    </tm-pagination>
+</div>
+
+</div>
+
+

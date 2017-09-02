@@ -1,0 +1,114 @@
+
+    <header ng-controller="backstageCtrl">
+        <div class="navLeft navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#example-navbar-collapse">
+                <span class="sr-only">切换导航</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <span class="navbar-brand">萝卜多后台管理系统</span>
+        </div>
+        <div class="navRight flex ">
+            <a href=""><span>超级管理员</span></a>
+            <span>|</span>
+            <a href=""><span>admin</span></a>
+            <span>|</span>
+            <a href="" ng-click="logout()"><span class="icon3 iconfont">&#xe621;</span></a>
+        </div>
+    </header>
+    <main>
+        <div class="sidebar collapse navbar-collapse" id="example-navbar-collapse">
+            <ul class="nav navbar-nav" id="accordion">
+                <!--折叠内容开始-->
+                <li class="panel">
+                    <a data-target="#collapse1" data-toggle="collapse" data-parent="#accordion" class="managelist" id="managelist1">
+                        <span class="pen iconfont">&#xe604;</span>
+                        信息管理
+                        <span class="arrowL iconfont">&#xe667;</span>
+                    </a>
+                    <ul class="collapse detailslist" id="collapse1">
+                        <li><a href="">公司列表</a></li>
+                        <li><a href="">职位列表</a></li>
+                    </ul>
+                </li>
+                <li class="panel">
+                    <a data-target="#collapse2" data-toggle="collapse" data-parent="#accordion"  class="managelist" id="managelist2">
+                        <span class="pen iconfont">&#xe604;</span>
+                        Article管理
+                        <span class="arrowL iconfont">&#xe667;</span>
+                    </a>
+                    <ul class="collapse detailslist" id="collapse2">
+                        <li  ui-sref=".article-list"><a href="">Article管理</a></li>
+                    </ul>
+                </li>
+                <li class="panel">
+                    <a data-target="#collapse3" data-toggle="collapse" data-parent="#accordion"  class="managelist" id="managelist3">
+                        <span class="pen iconfont">&#xe604;</span>
+                        人才管理
+                        <span class="arrowL iconfont">&#xe667;</span>
+                    </a>
+                    <ul class="collapse detailslist" id="collapse3">
+                        <li><a href="">候选人列表</a></li>
+                        <li><a href="">人才列表</a></li>
+                    </ul>
+                </li>
+                <li class="panel">
+                    <a data-target="#collapse4" data-toggle="collapse" data-parent="#accordion"  class="managelist" id="managelist4">
+                        <span class="pen iconfont">&#xe604;</span>
+                        推荐管理
+                        <span class="arrowL iconfont">&#xe667;</span>
+                    </a>
+                    <ul class="collapse detailslist" id="collapse4">
+                        <li><a href="">推荐列表</a></li>
+                    </ul>
+                </li>
+                <li class="panel">
+                    <a data-target="#collapse5" data-toggle="collapse" data-parent="#accordion"  class="managelist" id="managelist5">
+                        <span class="pen iconfont">&#xe604;</span>
+                        后台管理
+                        <span class="arrowL iconfont">&#xe667;</span>
+                    </a>
+                    <ul class="collapse detailslist" id="collapse5">
+                        <li><a href="">模块管理</a></li>
+                        <li><a href="">角色管理</a></li>
+                        <li><a href="">密码管理</a></li>
+                        <li><a href="">账户管理</a></li>
+                    </ul>
+                </li>
+                <li class="panel">
+                    <a data-target="#collapse6" data-toggle="collapse" data-parent="#accordion"  class="managelist" id="managelist6">
+                        <span class="pen iconfont">&#xe604;</span>
+                        用户管理
+                        <span class="arrowL iconfont">&#xe667;</span>
+                    </a>
+                    <ul class="collapse detailslist" id="collapse6">
+                        <li><a href="">用户列表</a></li>
+                    </ul>
+                </li>
+                <li class="panel">
+                    <a data-target="#collapse7" data-toggle="collapse" data-parent="#accordion"  class="managelist" id="managelist7">
+                        <span class="pen iconfont">&#xe604;</span>
+                        内容管理
+                        <span class="arrowL iconfont">&#xe667;</span>
+                    </a>
+                    <ul class="collapse detailslist" id="collapse7">
+                        <li><a href="">文章管理</a></li>
+                        <li><a href="">视频管理</a></li>
+                    </ul>
+                </li>
+                <!--折叠内容结束-->
+            </ul>
+        </div>
+        <div class="msg">
+            <div ui-view="">
+                <h1>welcome</h1>
+            </div>
+        </div>
+    </main>
+    <script src="js/backstage.js"></script>
+
+
+
+
