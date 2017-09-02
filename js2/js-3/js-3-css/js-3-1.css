@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100px;
+    font-family: "Microsoft Yahei", serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a, a:visited, a:hover, a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+    background-color: #29bde0;
+    z-index: 1;
+}
+
+header > a:nth-child(1) {
+    position: absolute;
+    left: 0.23rem;
+    top: 50%;
+    margin-top: -0.21rem;
+
+}
+
+header > a:nth-child(1) > img {
+    height: 0.42rem;
+}
+
+header > a:nth-child(2) {
+    position: absolute;
+    right: 0.23rem;
+    top: 50%;
+    margin-top: -0.18rem;
+
+}
+
+header > a:nth-child(2) > img {
+    height: 0.36rem;
+}
+
+.main-wrap {
+    padding: 1.59rem 13.4% 0.75rem 13.4%;
+    background-color: #29bde0;
+}
+
+main {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    height: 6.44rem;
+    text-align: center;
+    background-color: #ffedc5;
+    border: solid 5px #fff;
+}
+
+.number {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-top: -0.34rem;
+    margin-left: -0.34rem;
+    width: 0.68rem;
+    height: 0.68rem;
+    line-height: 0.60rem;
+    text-align: center;
+    font-size: 0.4rem;
+    color: #f56b81;
+    border: solid 3px #ffedc5;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.reverse-img {
+    display: none;
+    margin-top: 1.75rem;
+    display: inline-block;
+    width: 50%
+}
+
+
+.front-wrap {
+    display: none;
+}
+
+.front-img {
+    margin-top: 0.58rem;
+    margin-bottom: 0.38rem;
+    width: 45.3%;
+}
+
+main p {
+    margin-bottom: 0.16rem;
+    font-size: 0.3rem;
+}
+
+.p-role {
+    color: #29bde0;
+}
+
+.p-keyword {
+    color: #f56b81;
+}
+
+.p-tip {
+    margin: 0.3rem 0.26rem 0 0.26rem;
+    font-size: 0.25rem;
+    text-align: left;
+    color: #fca000;
+}
+
+footer {
+    padding: 0.37rem 0.75rem 0.58rem 0.75rem;
+    background-color: #29bde0;
+}
+
+footer > button {
+    width: 100%;
+    height: 0.86rem;
+    font-size: 0.34rem;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    background-color: #fbb435
+}

@@ -1,0 +1,170 @@
+@import "win-pp.css";
+@media screen and (min-width:640px)
+{
+    html {  font-size: 200px;  }
+
+}
+
+body {
+    margin:0 auto;
+    width:100%;
+    max-width:640px;
+}
+
+header,main,footer {
+    width:100%;
+    max-width: 640px;
+}
+p,button,span,header,main,footer,ul{
+    margin:0;
+    padding:0;
+    border:none;
+}
+
+header {
+    border-bottom:solid 1px #74d4eb;
+    letter-spacing:0.02rem;
+    z-index: 10;
+
+}
+
+.img-left {
+    position:absolute;
+    bottom:0.08rem;
+    left: 0.11rem;
+    width:0.2rem;
+}
+
+.img-right {
+    position:absolute;
+    bottom:0.08rem;
+    right: 0.11rem;
+    width:0.2rem;
+}
+main {
+    margin-top:0.32rem;
+    margin-bottom:0.65rem;
+}
+.main-upper-part {
+    padding:0 11.8%;
+    background-color: #29bde0;
+}
+.win {
+    position: relative;
+    display:inline-block;
+    padding-top:0.12rem;
+    padding-bottom: 0.08rem;
+    width:100%;
+    text-align: center;
+}
+
+.img-win-wrap {
+    position: relative;
+}
+.img-win {
+    width:1.74rem;
+}
+
+.the-winer {
+    position: absolute;
+    top:  65%;
+    left: 33%;
+    font-size: 0.2rem;
+    color: #fff;
+}
+
+.congratulation {
+    line-height:0.23rem;
+    font-size: 0.16rem;
+    color:#ffc865;
+    font-weight:600;
+}
+
+.time {
+    margin-top:0.23rem;
+    line-height:0.19rem;
+    font-size: 0.13rem;
+    color:#fff;
+}
+
+.player {
+    padding-bottom:0.05rem;
+    width:100%;
+}
+
+.player li {
+    display:inline-block;
+    width:32%;
+    line-height:0.19rem;
+    font-size:0.13rem;
+    color:#fff;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.font-hidden {
+    visibility:hidden;
+}
+
+.signal {
+    padding-bottom:0.12rem;
+}
+
+.signal li {
+    font-size:0.13rem;
+    color:#fff;
+}
+
+.date-group {
+    padding:0 11.8%;
+    background-color: #fff;
+}
+
+.date-group li {
+    padding-bottom:0.14rem;
+}
+
+.date {
+    line-height:0.31rem;
+    font-size:0.15rem;
+    color:#515151;
+}
+
+.event {
+    line-height:0.2rem;
+    font-size:0.13rem;
+    color:#a6a6a6;
+}
+
+footer {
+    height:0.65rem;
+    background-color: #99dff0;
+    background-color:rgba(153,223,240,0.5)
+}
+
+
+footer button {
+    position: absolute;
+    bottom:0.11rem;
+    display:inline-block;
+    height:0.44rem;
+    width:42%;
+    border-radius:6px;
+    font-size:0.2rem;
+
+}
+
+.again {
+    margin-left:3.75%;
+    color:#fff;
+    background-color: #f66f6f;
+}
+
+.share {
+    right:3.75%;
+    color:#fff;
+    background-color: #fbb435;
+}
+

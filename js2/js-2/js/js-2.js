@@ -141,7 +141,7 @@ function numberAdd() {
 
 
 document.getElementById("deal").onclick = function () {
-    if ( player.length < 6 ) alert("\"点击设置\"配置玩家身份")
+    if ( player.length < 6 ) alert("\"点击设置\"      班主任说不点不给开")
     else  parent.location.href = '../js-3/js-3-1.html'
 }
 

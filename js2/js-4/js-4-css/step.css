@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100px;
+    font-family: "Microsoft Yahei", serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a, a:visited, a:hover, a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+    background-color: #29bde0;
+    z-index: 1;
+    border-bottom: solid 2px #74d4eb;
+}
+
+header > a:nth-child(1) > img {
+    position: absolute;
+    left: 0.23rem;
+    top: 50%;
+    margin-top: -0.21rem;
+}
+
+header > a:nth-child(2) > img {
+    position: absolute;
+    right: 0.23rem;
+    top: 50%;
+    margin-top: -0.18rem;
+
+}
+
+.main-wrap {
+    margin-top: 0.76rem;
+    padding: 0.37rem 0.08rem 0.1rem 0.08rem;
+    background-color: #f0f0f0;
+}
+
+main {
+    border: 2px solid #c9c9c9;
+    background-color: #f7f7f7;
+    font-size: 0.28rem;
+}
+
+.main-tittle {
+    position: relative;
+    line-height: 0.86rem;
+    text-align: center;
+    color: #24a7c6;
+    border-bottom: 1px solid #c9c9c9;
+}
+
+.main-tittle > img {
+    position: absolute;
+    height: 0.18rem;
+    top: 50%;
+    margin-top: -0.09rem;
+    right: 0.18rem;
+}
+
+.content {
+    position: relative;
+    margin-left: 0.37rem;
+    margin-right: 0.46rem;
+    padding-top: 0.5rem;
+    padding-left: 0.52rem;
+    border-left: 2px solid #c9c9c9;
+}
+
+.content > div:nth-child(1) > img:nth-child(1),
+.content > div:nth-child(3) > img:nth-child(1) {
+    position: absolute;
+    left: -0.83rem;
+    margin-top: 0.08rem;
+    background-color: #f7f7f7;
+}
+
+.step-list {
+    position: relative;
+    margin-bottom: 0.18rem;
+    width: 100%;
+    line-height: 0.76rem;
+    text-align: center;
+    color: #fff;
+    background-color: #24a7c6;
+}
+
+.step-list:before {
+    content: '';
+    display: inline-block;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid transparent;
+    border-right: 20px solid #24a7c6;
+    position: absolute;
+    left: -38px;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.special-list {
+    margin-bottom: 0.82rem;
+}
+
+main button {
+    position: relative;
+    margin-top: 0.5rem;
+    margin-bottom: 0.18rem;
+    width: 100%;
+    line-height: 0.76rem;
+    text-align: center;
+    font-size: 0.3rem;
+    color: #fff;
+    background-color: #fbb435;
+}

@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100px;
+    font-family: "Microsoft Yahei", serif;
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a, a:visited, a:hover, a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 0.75rem;
+    line-height: 0.75rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fff;
+    background-color: #29bde0;
+    z-index: 1;
+    border-bottom: solid 1px #74d4eb;
+}
+
+header > a:nth-child(1) > img {
+    position: absolute;
+    left: 0.23rem;
+    top: 50%;
+    margin-top: -0.21rem;
+}
+
+header > a:nth-child(2) > img {
+    position: absolute;
+    right: 0.23rem;
+    top: 50%;
+    margin-top: -0.18rem;
+
+}
+
+main {
+    padding-top: 0.95rem;
+    background-color: #29bde0;
+    padding-bottom: 1.8rem;
+    line-height: 0.4rem;
+    font-size: 0.2rem;
+    text-align: center;
+    color: #d6fff8;
+}
+
+main img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+main > img:first-child {
+    margin-bottom: 0.5rem;
+    width: 40%;
+}
+
+.dead-vote {
+    margin: 0.5rem 15.6% 0 15.6%;
+    line-height: 0.57rem;
+    color: #bff7ff;
+    background-color: #24a7c6;
+}
+
+.dead-vote + img {
+    width: 16%;
+}
+
+.player-vote {
+    margin: 0.1rem 15.6% 0 15.6%;
+    line-height: 0.57rem;
+    color: #bff7ff;
+    background-color: #24a7c6;
+}
+
+.player-vote + img {
+    width: 16%;
+}
+
+footer {
+    position: fixed;
+    box-sizing: border-box;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    padding: 0.37rem 0.75rem 0.58rem 0.75rem;
+    background-color: #29bde0;
+}
+
+footer > button {
+    width: 100%;
+    height: 0.7rem;
+    font-size: 0.23rem;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    background-color: #fbb435
+}
