@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cmn-hans">
+    <meta charset="UTF-8">
+    <title>js-2</title>
+    <link rel="Shortcut Icon" href="image/guagua.ico" type="image/x-icon">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/js-2.css">
+</head>
+
+<body>
+<header>
+    <a><img src="images/back.png"></a>
+    <span>参数设置</span>
+    <a> <img src="images/circled-help.png"></a>
+</header>
+<div class="main-wrap">
+    <main>
+        <div class="set">
+            <div class="set-h">
+                玩家配比
+            </div>
+            <div class="set-main">
+                <div id="set-item" class="set-item">
+
+                </div>
+                <button id="set-btn" onclick=" AssignIdentity(),show()" class="set-btn">
+                    点击设置 <img src="images/pen.png">
+                </button>
+            </div>
+        </div>
+        <div class="text">
+            <input type="text" value="水民词组">
+            <input type="text" value="幽灵词组">
+        </div>
+        <div class="main-footer">
+            <p>
+                玩家人数
+                <input id="input-number" oninput="writeNumber() " onblur="inputFilter() " type="text" value="">
+                人
+                <span class="tip">
+                    *只能输入数字，范围6至20
+                </span>
+            </p>
+
+            <div class="slider">
+                <button onclick="numberMinus()">
+                    <img src="images/slider-minus.png">
+                </button>
+                <input id="range" type="range" oninput="slider()" min="6" max="20" value="">
+                <button onclick="numberAdd()">
+                    <img src="images/slider-add.png">
+                </button>
+            </div>
+        </div>
+    </main>
+</div>
+<footer>
+    <button id="deal">
+        去发牌
+    </button>
+</footer>
+<script type="text/javascript" src="js/js-2.js"></script>
+</body>
+</html>

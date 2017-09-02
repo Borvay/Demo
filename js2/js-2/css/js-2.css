@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100px;
+    font-family: "Microsoft Yahei", serif;
+
+}
+
+body {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 640px;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+a, a:visited, a:hover, a:link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 640px;
+    height: 0.64rem;
+    line-height: 0.64rem;
+    text-align: center;
+    background-color: #29bde0;
+}
+
+header > a:first-child {
+    position: absolute;
+    left: 0.18rem;
+    top: 50%;
+    margin-top: -0.22rem;
+    height: 0.4rem;
+
+}
+
+header > a:first-child > img {
+
+    height: 0.4rem;
+
+}
+
+header span {
+    font-size: 0.24rem;
+    color: #fff;
+
+}
+
+header > a:last-child {
+    position: absolute;
+    right: 0.18rem;
+    top: 50%;
+    margin-top: -0.25rem;
+    height: 0.46rem;
+    vertical-align: middle;
+}
+
+header > a:first-child > img {
+
+    height: 0.46rem;
+
+}
+
+.main-wrap {
+    margin-top: 0.64rem;
+    padding: 0.19rem 0.15rem;
+    background-color: #f0f0f0;
+}
+
+main {
+}
+
+.set {
+    display: flex;
+    margin-bottom: 0.1rem;
+    height: 4.5rem;
+    font-size: 0;
+    border: none;
+}
+
+.set > div {
+    vertical-align: middle;
+}
+
+.set-h {
+    box-sizing: border-box;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+    font-size: 20px;
+    writing-mode: vertical-lr;
+    text-align: center;
+    color: #444;
+    background-color: #fff;
+    border-right: #ccc 1px solid;
+}
+
+.set-main {
+    flex: 1;
+    height: 100%;
+    font-size: 0;
+}
+
+.set-item {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.35rem 0.3rem;
+    width: 100%;
+    height: 86%;
+    background-color: #fff;
+    overflow: auto;
+}
+
+.shuimin {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 50%
+}
+
+.role-wrap {
+    display: inline-block;
+    width: 50%;
+    line-height: 0.54rem;
+    height: 0.54rem;
+    font-size: 0;
+
+}
+
+.square-villager {
+    display: inline-block;
+    height: 0.09rem;
+    width: 0.09rem;
+    vertical-align: middle;
+    background-color: #fab344;
+
+}
+
+.square-wolf {
+    display: inline-block;
+    height: 0.09rem;
+    width: 0.09rem;
+    vertical-align: middle;
+    background-color: #29bde0;
+}
+
+.role {
+    display: inline-block;
+    margin-left: 9%;
+    font-size: 0.23rem;
+    color: #a1a1a1;
+    vertical-align: middle;
+}
+
+.set-btn {
+    box-sizing: border-box;
+    display: inline-block;
+    height: 14%;
+    width: 100%;
+    font-size: 20px;
+    color: #29bde0;
+}
+
+.set-btn img {
+    margin-left: 0.16rem;
+}
+
+.text {
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-bottom: 0.22rem;
+    background-color: #fff;
+}
+
+.text input {
+    box-sizing: border-box;
+    width: 100%;
+    line-height: 0.8rem;
+    font-size: 0.27rem;
+    color: #e1e1e1;
+    border: none;
+    border-bottom: solid 2px #f0f0f0;
+    outline: none;
+}
+
+.main-footer {
+    background-color: #fff;
+}
+
+.main-footer p {
+    padding-left: 0.28rem;
+    height: 0.96rem;
+    line-height: 0.96rem;
+    font-size: 0.2rem;
+    letter-spacing: 0.01rem;
+    color: #444;
+}
+
+.main-footer p input {
+    position: relative;
+    top: 0.02rem;
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.37rem;
+    font-size: 0.3rem;
+    text-align: center;
+    color: #fab344;
+    border: solid 1px #fab344;
+    outline: none;
+    background-color: inherit;
+}
+
+.tip {
+    display: none;
+    font-size: 0.12rem;
+    color: #ff5f58;
+}
+
+.slider {
+
+    line-height: 0.96rem;
+    text-align: center;
+}
+
+.slider > button {
+    margin-left: 6%;
+    margin-right: 6%;
+    background-color: #fff;
+    height: 0.32rem;
+}
+
+.slider > button > img {
+}
+
+/*去除默认样式*/
+input[type=range] {
+    /*加厂商前缀保证在webkit上的兼容*/
+    -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+    width: 100%; /* Specific width is required for Firefox. */
+}
+
+input[type=range]::-webkit-slider-thumb {
+    /*加厂商前缀保证在webkit上的兼容*/
+    -webkit-appearance: none;
+}
+
+/*input[type=range]::-ms-track {*/
+    /*width: 100%;*/
+    /*cursor: pointer;*/
+    /*background: transparent; /!* Hides the slider so custom styles can be added *!/*/
+    /*border-color: transparent;*/
+    /*color: transparent;*/
+/*}*/
+
+input[type=range]:focus {
+    outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+/*//////*/
+
+input[type=range] {
+    width: 50%;
+    height: 0.32rem;
+    background-color: inherit;
+}
+
+/*滑动轨道*/
+input[type=range]::-webkit-slider-runnable-track {
+    height: 5px;
+    background-color: #fab344;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    position: relative;
+    top: 50%;
+    margin-top: -0.08rem;
+    height: 0.18rem;
+    width: 0.3rem;
+    background-image: url("../images/thumb.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+footer {
+    padding: 0 0.15rem 0.19rem 0.15rem;
+    background-color: #f0f0f0;
+}
+
+footer button {
+    width: 100%;
+    height: 0.84rem;
+    font-size: 0.34rem;
+    letter-spacing: 0.05rem;
+    color: #fff;
+    background-color: #fab344;
+}
