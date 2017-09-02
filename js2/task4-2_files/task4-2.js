@@ -9,3 +9,8 @@ var day = save.date;
 if (day != undefined){
     document.getElementById("day").innerText=day;
 }
+
+document.getElementById("deal").onclick = function () {
+    if ( player.length < 6 ) alert("\"点击设置\"配置玩家身份")
+    else  parent.location.href = './mytask4-3.html'
+}
