@@ -1,5 +1,5 @@
 body {
-    background: url("background.jpg") no-repeat;
+    background: url("2.jpg") no-repeat;
     background-size: 100vw 100vh;
 }
 
@@ -11,13 +11,13 @@ body {
     width: 536px;
     height: 391px;
     text-align: center;
-    background-color: #d3d8e1;
+    background-color: #d1d2cf;
 }
 
 h3 {
     margin: 30px 0;
     font-size: 30px;
-    color: #03a9f4;
+    color: #00090e;
 }
 
 form {
@@ -53,7 +53,7 @@ button {
     width: 438px;
     font-size: 20px;
     color: #fff;
-    background-color: #03a9f4;
+    background-color: #39f421;
     border-radius: 5px;
 }
 
