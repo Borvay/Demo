@@ -6,7 +6,9 @@ div.wrapper {
     bottom: 0;
     left: 0;
     right: 0;
-    background: #232a3a;
+    /*background: #232a3a;*/
+    background: url("6.jpg") no-repeat;
+    background-size: 100vw 100vh;
 }
 div.col-md-4 {
     position: absolute;
@@ -16,7 +18,7 @@ div.col-md-4 {
     border-radius: 5px;
     min-height: 3rem;
     text-align: center;
-    background: #ffffff;
+    background: #D9CF4B;
 }
 div.logo {
     height: .4rem;
@@ -74,10 +76,10 @@ p.tips2 {
     width: 90%;
     height: .35rem;
     background: #518ac2;
-    color: #ffffff;
+    color: #fdfffb;
     outline: none;
     border: none;
 }
 #log-in[disabled] {
-    background: #cccccc;
+    background: #0ecc18;
 }
