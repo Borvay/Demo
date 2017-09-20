@@ -80,7 +80,7 @@ $("#btn-login").click(function() {
                     $(".alert").html("无此用户").css('color', 'red');
                 }
                 else {
-                    alert(result.message);11111
+                    alert(result.message);111111
                 }
             }
         }
